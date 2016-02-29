@@ -1,0 +1,4 @@
+#Mon Feb 29 16:44:41 EST 2016
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=fetch from upstream
