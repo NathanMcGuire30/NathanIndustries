@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
+  "modid": "nathanmod",
+  "name": "Nathan Industries",
+  "description": "A mod that adds some blocks",
+  "version": "",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Nathan the More Awesome"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
