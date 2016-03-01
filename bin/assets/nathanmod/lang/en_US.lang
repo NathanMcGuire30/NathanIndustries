@@ -16,6 +16,9 @@ elmLog.name=Elm Wood
 HickoryLeaves.name=Hickory Leaves
 elmLeaves.name=Elm Leaves
 
+HickorySlab.name=Hickory Slabs
+elmSlab.name=Elm Slabs
+
 Hickory.name=Use the correct metadata next time
 
 item.nathanmod_Titanium_Ingot.name=Titanium Ingot

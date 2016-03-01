@@ -2,7 +2,7 @@
 {
   "modid": "nathanmod",
   "name": "Nathan Industries",
-  "description": "A mod that adds some blocks and trees",
+  "description": "A mod that adds some blocks",
   "version": "",
   "mcversion": "${mcversion}",
   "url": "",
