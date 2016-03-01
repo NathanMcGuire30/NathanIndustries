@@ -193,3 +193,37 @@ java.io.IOException: The process cannot access the file because another process 
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:187)
 	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:2463)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-03-01 10:18:55.561
+!MESSAGE Failed to add resource to index
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to add resource to index
+	at org.eclipse.egit.core.op.AddToIndexOperation.execute(AddToIndexOperation.java:82)
+	at org.eclipse.egit.ui.internal.actions.AddToIndexActionHandler$1.run(AddToIndexActionHandler.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of add command
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:211)
+	at org.eclipse.egit.core.op.AddToIndexOperation.execute(AddToIndexOperation.java:79)
+	... 2 more
+Caused by: java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:187)
+	... 3 more
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2016-03-01 10:18:55.562
+!MESSAGE Failed to add resource to index
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of add command
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:211)
+	at org.eclipse.egit.core.op.AddToIndexOperation.execute(AddToIndexOperation.java:79)
+	at org.eclipse.egit.ui.internal.actions.AddToIndexActionHandler$1.run(AddToIndexActionHandler.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:187)
+	... 3 more
