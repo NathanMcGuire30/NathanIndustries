@@ -1,0 +1,16 @@
+[
+{
+  "modid": "nathanmod",
+  "name": "Nathan Industries",
+  "description": "A mod that adds some blocks",
+  "version": "",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Nathan the More Awesome"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
