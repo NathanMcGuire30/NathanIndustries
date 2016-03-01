@@ -150,7 +150,7 @@
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_M2lIcN8lEeW2LLgaW0c-Zg" elementId="org.eclipse.ui.editorss" selectedElement="_DeJDUN8uEeWnrJPZ3P0iGA">
       <children xsi:type="basic:PartSashContainer" xmi:id="_DeJDUN8uEeWnrJPZ3P0iGA" selectedElement="_M2lIcd8lEeW2LLgaW0c-Zg" horizontal="true">
-        <children xsi:type="basic:PartStack" xmi:id="_M2lIcd8lEeW2LLgaW0c-Zg" elementId="org.eclipse.e4.primaryDataStack" containerData="5254" selectedElement="_CLAngN8uEeWnrJPZ3P0iGA">
+        <children xsi:type="basic:PartStack" xmi:id="_M2lIcd8lEeW2LLgaW0c-Zg" elementId="org.eclipse.e4.primaryDataStack" containerData="2361" selectedElement="_CLAngN8uEeWnrJPZ3P0iGA">
           <tags>org.eclipse.e4.primaryDataStack</tags>
           <tags>EditorStack</tags>
           <tags>active</tags>
@@ -179,10 +179,10 @@
             <toolbar xmi:id="_Gitnkd8uEeWnrJPZ3P0iGA" elementId="org.eclipse.egit.ui.StagingView" visible="false"/>
           </children>
         </children>
-        <children xsi:type="basic:PartSashContainer" xmi:id="_oYUaoN8vEeWnrJPZ3P0iGA" containerData="4746" selectedElement="_DeJDUd8uEeWnrJPZ3P0iGA">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_oYUaoN8vEeWnrJPZ3P0iGA" containerData="7639" selectedElement="_DeJDUd8uEeWnrJPZ3P0iGA">
           <children xsi:type="basic:PartStack" xmi:id="_DeJDUd8uEeWnrJPZ3P0iGA" elementId="PartStack@13e59265" containerData="6651" selectedElement="_qYlwoN8sEeWnrJPZ3P0iGA">
             <children xsi:type="basic:Part" xmi:id="_qYlwoN8sEeWnrJPZ3P0iGA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NathanMod.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NathanMod.java&quot; partName=&quot;NathanMod.java&quot; title=&quot;NathanMod.java&quot; tooltip=&quot;Minecraft/src/main/java/com/nathan/nathanmod/NathanMod.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Minecraft/src/main/java/com/nathan/nathanmod/NathanMod.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1693&quot; selectionTopPixel=&quot;487&quot;/>&#xD;&#xA;&lt;/editor>"/>
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NathanMod.java&quot; partName=&quot;NathanMod.java&quot; title=&quot;NathanMod.java&quot; tooltip=&quot;Minecraft/src/main/java/com/nathan/nathanmod/NathanMod.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Minecraft/src/main/java/com/nathan/nathanmod/NathanMod.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1693&quot; selectionTopPixel=&quot;482&quot;/>&#xD;&#xA;&lt;/editor>"/>
               <tags>Editor</tags>
               <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
               <tags>removeOnHide</tags>
@@ -348,7 +348,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MpThcN8lEeW2LLgaW0c-Zg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ZHD0oN-_EeW6uu1xNBiNpg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_MCR9zN8lEeW2LLgaW0c-Zg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KzVWsN_HEeWvBZPOb9fWIQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_MCR9zN8lEeW2LLgaW0c-Zg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MpThcd8lEeW2LLgaW0c-Zg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -372,7 +372,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MpUIgt8lEeW2LLgaW0c-Zg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ZHJUMN-_EeW6uu1xNBiNpg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_MCQIht8lEeW2LLgaW0c-Zg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KzZoIN_HEeWvBZPOb9fWIQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_MCQIht8lEeW2LLgaW0c-Zg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MpUvkN8lEeW2LLgaW0c-Zg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
