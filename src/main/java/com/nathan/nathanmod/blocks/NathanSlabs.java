@@ -26,7 +26,7 @@ public class NathanSlabs extends BlockSlab {
 	private boolean isDouble;
 	
 	public NathanSlabs(boolean isHalf) {
-		super(isHalf, Material.wood);
+		super(!isHalf, Material.wood);
 		if (isHalf == true) {
 			this.setCreativeTab(CreativeTabs.tabBlock);
 		}
@@ -37,11 +37,11 @@ public class NathanSlabs extends BlockSlab {
 			woodTypes = new String[8];
 			woodTypes = Arrays.copyOfRange(NathanMod.WoodTypes, 0, 7);
 		}
-		isDouble = isHalf;
+		isDouble = !isHalf;
 	}
 	
 	public boolean isDoubleSlab() {
-		return field_150004_a;
+		return isDouble;
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -50,7 +50,7 @@ public class NathanSlabs extends BlockSlab {
 
         for (int i=0; i < this.iconArray.length; i++)
         {
-            this.iconArray[i] = reg.registerIcon(NathanMod.MODID + ":planks_" + woodTypes[i]);
+        	this.iconArray[i] = reg.registerIcon(NathanMod.MODID + ":planks_" + woodTypes[i]);
         }
 	}
 	
@@ -60,8 +60,10 @@ public class NathanSlabs extends BlockSlab {
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta)
     {
-    	if (meta < 0 || meta >= woodTypes.length) {
+    	if (meta < 0 || (meta >= woodTypes.length && meta < 8)) {
 			meta=0;
+		} else if (meta > 8) {
+			meta %=8; 
 		}
 		return iconArray[meta];
     }
@@ -77,18 +79,22 @@ public class NathanSlabs extends BlockSlab {
      */
     protected ItemStack createStackedBlock(int meta)
     {
-    	return new ItemStack(Blocks.wooden_slab, 2, meta & 7);
+    	return new ItemStack(NathanMod.NathanSlabs, meta);
     }
 
-    public String func_150002_b(int p_150002_1_)
+    //Get unlocalised name or something
+    public String func_150002_b(int meta)
     {
-    	return "SomeSlab";
-//      if (p_150002_1_ < 0 || p_150002_1_ >= woodTypes.length)
-//      {
-//          p_150002_1_ = 0;
-//      }
-//
-//      return super.getUnlocalizedName() + "." + woodTypes[p_150002_1_];
+      if (meta < 0 || meta >= woodTypes.length)
+      {
+          meta = 0;
+      }
+      if (this.isDouble == true) {
+    	  return "NathanMod.Double." + woodTypes[meta];
+      } else {
+    	  return "NathanMod." + woodTypes[meta] + "slab";
+      }
+      
     }
 
     /**

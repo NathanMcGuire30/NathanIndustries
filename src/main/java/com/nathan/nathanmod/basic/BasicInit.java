@@ -38,19 +38,22 @@ public class BasicInit {
     	NathanMod.creativeQuartz = new CreativeQuartz();				//Creative Quartz
     	GameRegistry.registerBlock(NathanMod.creativeQuartz, "Creative_Quartz");
     	
-    	NathanMod.NathanLogs = new NathanLogs();
+    	NathanMod.NathanLogs = new NathanLogs();								//Logs1
     	GameRegistry.registerBlock(NathanMod.NathanLogs, MultiItemLog.class, "NathanLogs");
     	
-    	NathanMod.NathanLeaves = new NathanLeaves();
+    	NathanMod.NathanPlanks = new NathanPlanks("NathanPlanks");				//Planks1
+    	GameRegistry.registerBlock(NathanMod.NathanPlanks, MultiItemPlanks.class, "NathanPlanks");
+    	
+    	NathanMod.NathanLeaves = new NathanLeaves();							//Leaves1
     	GameRegistry.registerBlock(NathanMod.NathanLeaves, MultiItemLeaves.class, "NathanLeaves");
     	
-    	NathanMod.NathanSlabs = new NathanSlabs(true);
+    	NathanMod.NathanSlabs = new NathanSlabs(true);							//Half Slab
     	GameRegistry.registerBlock(NathanMod.NathanSlabs, ItemNathanSlab.class, "NathanSlabs");
     	
-    	NathanMod.NathanSlabsDouble = new NathanSlabs(false);
+    	NathanMod.NathanSlabsDouble = new NathanSlabs(false);					//Full Slab
     	GameRegistry.registerBlock(NathanMod.NathanSlabsDouble, ItemNathanSlab.class, "NathanSlabsDouble");
     	
-    	GameRegistry.registerBlock(NathanMod.NathanPlanks = new NathanPlanks("NathanPlanks"), MultiItemPlanks.class, "NathanPlanks");
+    	
 	}
 	
 	//Items

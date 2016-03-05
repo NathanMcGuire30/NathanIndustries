@@ -1,36 +1,64 @@
-[17:48:55] [main/INFO]: Setting user: Player913
-[17:48:57] [Client thread/INFO]: LWJGL Version: 2.9.1
-[17:48:58] [Client thread/ERROR]: Couldn't initialize twitch stream
-[17:49:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
-[17:49:16] [Sound Library Loader/INFO]: Sound engine started
-[17:49:38] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[17:49:38] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[17:49:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
-[17:49:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[17:49:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[17:49:41] [Sound Library Loader/INFO]: Sound engine started
-[17:50:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[17:50:19] [Server thread/INFO]: Generating keypair
-[17:50:19] [Server thread/INFO]: Preparing start region for level 0
-[17:50:20] [Server thread/INFO]: Preparing spawn area: 20%
-[17:50:21] [Server thread/INFO]: Preparing spawn area: 93%
-[17:50:21] [Server thread/INFO]: Changing view distance to 12, from 10
-[17:50:22] [Server thread/INFO]: Player913[local:E:3a9d88a3] logged in with entity id 375 at (149.71498037067317, 66.0, 223.92172577588846)
-[17:50:22] [Server thread/INFO]: Player913 joined the game
-[17:50:47] [Server thread/INFO]: Saving and pausing game...
-[17:50:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:50:47] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:50:47] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:50:49] [Server thread/INFO]: Player913 has just earned the achievement [Taking Inventory]
-[17:50:49] [Client thread/INFO]: [CHAT] Player913 has just earned the achievement [Taking Inventory]
-[17:50:54] [Server thread/INFO]: Saving and pausing game...
-[17:50:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:50:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:50:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:50:54] [Server thread/INFO]: Stopping server
-[17:50:54] [Server thread/INFO]: Saving players
-[17:50:55] [Server thread/INFO]: Saving worlds
-[17:50:55] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:50:55] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:50:55] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:50:57] [Client thread/INFO]: Stopping!
+[11:57:16] [main/INFO]: Setting user: Player841
+[11:57:18] [Client thread/INFO]: LWJGL Version: 2.9.1
+[11:57:19] [Client thread/ERROR]: Couldn't initialize twitch stream
+[11:57:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[11:57:33] [Sound Library Loader/INFO]: Sound engine started
+[11:57:42] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[11:57:42] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[11:57:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[11:57:43] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:57:43] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:57:44] [Sound Library Loader/INFO]: Sound engine started
+[11:57:49] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[11:57:49] [Server thread/INFO]: Generating keypair
+[11:57:50] [Server thread/INFO]: Preparing start region for level 0
+[11:57:51] [Server thread/INFO]: Preparing spawn area: 16%
+[11:57:52] [Server thread/INFO]: Changing view distance to 12, from 10
+[11:57:53] [Server thread/INFO]: Player841[local:E:d7b9a8e6] logged in with entity id 366 at (149.50637304905155, 66.0, 220.53464735200345)
+[11:57:53] [Server thread/INFO]: Player841 joined the game
+[11:58:04] [Server thread/ERROR]: Encountered an unexpected exception
+net.minecraft.util.ReportedException: Ticking memory connection
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:198) ~[NetworkSystem.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) ~[MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614) ~[MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118) ~[IntegratedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+Caused by: java.lang.NullPointerException
+	at com.nathan.nathanmod.items.ItemNathanSlab.func_150946_a(ItemNathanSlab.java:192) ~[ItemNathanSlab.class:?]
+	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:95) ~[ItemNathanSlab.class:?]
+	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:507) ~[ForgeHooks.class:?]
+	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:142) ~[ItemStack.class:?]
+	at net.minecraft.server.management.ItemInWorldManager.activateBlockOrUseItem(ItemInWorldManager.java:422) ~[ItemInWorldManager.class:?]
+	at net.minecraft.network.NetHandlerPlayServer.processPlayerBlockPlacement(NetHandlerPlayServer.java:593) ~[NetHandlerPlayServer.class:?]
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:74) ~[C08PacketPlayerBlockPlacement.class:?]
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:122) ~[C08PacketPlayerBlockPlacement.class:?]
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) ~[NetworkSystem.class:?]
+	... 5 more
+[11:58:04] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Nathan\Documents\Java\NathanIndustries\eclipse\.\crash-reports\crash-2016-03-05_11.58.04-server.txt
+[11:58:04] [Server thread/INFO]: Stopping server
+[11:58:04] [Server thread/INFO]: Saving players
+[11:58:04] [Server thread/INFO]: Saving worlds
+[11:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[11:58:05] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[11:58:05] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[11:58:06] [Client thread/FATAL]: Unreported exception thrown!
+java.lang.NullPointerException
+	at com.nathan.nathanmod.items.ItemNathanSlab.func_150946_a(ItemNathanSlab.java:192) ~[ItemNathanSlab.class:?]
+	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:95) ~[ItemNathanSlab.class:?]
+	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:143) ~[ItemStack.class:?]
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:403) ~[PlayerControllerMP.class:?]
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1529) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2044) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_45]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
