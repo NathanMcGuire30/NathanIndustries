@@ -1,22 +1,29 @@
-[11:57:16] [main/INFO]: Setting user: Player841
-[11:57:18] [Client thread/INFO]: LWJGL Version: 2.9.1
-[11:57:19] [Client thread/ERROR]: Couldn't initialize twitch stream
-[11:57:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
-[11:57:33] [Sound Library Loader/INFO]: Sound engine started
-[11:57:42] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[11:57:42] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[11:57:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
-[11:57:43] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[11:57:43] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[11:57:44] [Sound Library Loader/INFO]: Sound engine started
-[11:57:49] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[11:57:49] [Server thread/INFO]: Generating keypair
-[11:57:50] [Server thread/INFO]: Preparing start region for level 0
-[11:57:51] [Server thread/INFO]: Preparing spawn area: 16%
-[11:57:52] [Server thread/INFO]: Changing view distance to 12, from 10
-[11:57:53] [Server thread/INFO]: Player841[local:E:d7b9a8e6] logged in with entity id 366 at (149.50637304905155, 66.0, 220.53464735200345)
-[11:57:53] [Server thread/INFO]: Player841 joined the game
-[11:58:04] [Server thread/ERROR]: Encountered an unexpected exception
+[13:39:26] [main/INFO]: Setting user: Player4
+[13:39:29] [Client thread/INFO]: LWJGL Version: 2.9.1
+[13:39:29] [Client thread/ERROR]: Couldn't initialize twitch stream
+[13:39:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[13:40:04] [Sound Library Loader/INFO]: Sound engine started
+[13:40:11] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[13:40:11] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[13:40:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[13:40:12] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:40:12] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:40:13] [Sound Library Loader/INFO]: Sound engine started
+[13:40:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[13:40:17] [Server thread/INFO]: Generating keypair
+[13:40:17] [Server thread/INFO]: Preparing start region for level 0
+[13:40:18] [Server thread/INFO]: Preparing spawn area: 23%
+[13:40:19] [Server thread/INFO]: Changing view distance to 12, from 10
+[13:40:20] [Server thread/INFO]: Player4[local:E:ddcd0235] logged in with entity id 362 at (149.80692669337375, 66.0, 219.6770927431211)
+[13:40:20] [Server thread/INFO]: Player4 joined the game
+[13:40:28] [Server thread/INFO]: Player4 has just earned the achievement [Taking Inventory]
+[13:40:29] [Client thread/INFO]: [CHAT] Player4 has just earned the achievement [Taking Inventory]
+[13:40:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3209ms behind, skipping 64 tick(s)
+[13:40:57] [Server thread/INFO]: Saving and pausing game...
+[13:40:57] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[13:40:57] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[13:40:57] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[13:41:10] [Server thread/ERROR]: Encountered an unexpected exception
 net.minecraft.util.ReportedException: Ticking memory connection
 	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:198) ~[NetworkSystem.class:?]
 	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) ~[MinecraftServer.class:?]
@@ -25,8 +32,7 @@ net.minecraft.util.ReportedException: Ticking memory connection
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
 	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
 Caused by: java.lang.NullPointerException
-	at com.nathan.nathanmod.items.ItemNathanSlab.func_150946_a(ItemNathanSlab.java:192) ~[ItemNathanSlab.class:?]
-	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:95) ~[ItemNathanSlab.class:?]
+	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:85) ~[ItemNathanSlab.class:?]
 	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:507) ~[ForgeHooks.class:?]
 	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:142) ~[ItemStack.class:?]
 	at net.minecraft.server.management.ItemInWorldManager.activateBlockOrUseItem(ItemInWorldManager.java:422) ~[ItemInWorldManager.class:?]
@@ -36,17 +42,16 @@ Caused by: java.lang.NullPointerException
 	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
 	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) ~[NetworkSystem.class:?]
 	... 5 more
-[11:58:04] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Nathan\Documents\Java\NathanIndustries\eclipse\.\crash-reports\crash-2016-03-05_11.58.04-server.txt
-[11:58:04] [Server thread/INFO]: Stopping server
-[11:58:04] [Server thread/INFO]: Saving players
-[11:58:04] [Server thread/INFO]: Saving worlds
-[11:58:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[11:58:05] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[11:58:05] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[11:58:06] [Client thread/FATAL]: Unreported exception thrown!
+[13:41:11] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Nathan\Documents\Java\NathanIndustries\eclipse\.\crash-reports\crash-2016-03-05_13.41.10-server.txt
+[13:41:11] [Server thread/INFO]: Stopping server
+[13:41:11] [Server thread/INFO]: Saving players
+[13:41:11] [Server thread/INFO]: Saving worlds
+[13:41:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[13:41:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[13:41:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[13:41:13] [Client thread/FATAL]: Unreported exception thrown!
 java.lang.NullPointerException
-	at com.nathan.nathanmod.items.ItemNathanSlab.func_150946_a(ItemNathanSlab.java:192) ~[ItemNathanSlab.class:?]
-	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:95) ~[ItemNathanSlab.class:?]
+	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:85) ~[ItemNathanSlab.class:?]
 	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:143) ~[ItemStack.class:?]
 	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:403) ~[PlayerControllerMP.class:?]
 	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1529) ~[Minecraft.class:?]

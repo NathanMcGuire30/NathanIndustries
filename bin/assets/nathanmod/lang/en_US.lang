@@ -16,8 +16,8 @@ elmLog.name=Elm Wood
 HickoryLeaves.name=Hickory Leaves
 elmLeaves.name=Elm Leaves
 
-HickorySlab.name=Hickory Slabs
-elmSlab.name=Elm Slabs
+NathanMod.Hickoryslab.name=Hickory Slabs
+NathanMod.elmslab.name=Elm Slabs
 
 Hickory.name=Use the correct metadata next time
 
