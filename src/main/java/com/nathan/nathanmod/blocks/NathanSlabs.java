@@ -62,8 +62,8 @@ public class NathanSlabs extends BlockSlab {
     {
     	if (meta < 0 || (meta >= woodTypes.length && meta < 8)) {
 			meta=0;
-		} else if (meta > 8) {
-			meta %=8; 
+		} else if (meta > 7) {
+			meta%=8; 
 		}
 		return iconArray[meta];
     }

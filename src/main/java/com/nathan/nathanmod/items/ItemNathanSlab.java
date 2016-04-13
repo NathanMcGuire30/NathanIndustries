@@ -82,11 +82,11 @@ public class ItemNathanSlab extends ItemSlab {
 
 			if ((par7 == 1 && !flag || par7 == 0 && flag) && block == singleSlab && j1 == is.getItemDamage())
 			{
-				if (world.checkNoEntityCollision(doubleSlab.getCollisionBoundingBoxFromPool(world, par4, par5, par6)) && world.setBlock(par4, par5, par6, doubleSlab, j1, 3))
-				{
-					world.playSoundEffect((double)((float)par4 + 0.5F), (double)((float)par5 + 0.5F), (double)((float)par6 + 0.5F), doubleSlab.stepSound.func_150496_b(), (doubleSlab.stepSound.getVolume() + 1.0F) / 2.0F, doubleSlab.stepSound.getPitch() * 0.8F);
-					--is.stackSize;
-				}
+//				if (world.checkNoEntityCollision(doubleSlab.getCollisionBoundingBoxFromPool(world, par4, par5, par6)) && world.setBlock(par4, par5, par6, doubleSlab, j1, 3))
+//				{
+//					world.playSoundEffect((double)((float)par4 + 0.5F), (double)((float)par5 + 0.5F), (double)((float)par6 + 0.5F), doubleSlab.stepSound.func_150496_b(), (doubleSlab.stepSound.getVolume() + 1.0F) / 2.0F, doubleSlab.stepSound.getPitch() * 0.8F);
+//					--is.stackSize;
+//				}
 
 				return true;
 			}
@@ -98,56 +98,56 @@ public class ItemNathanSlab extends ItemSlab {
 	}
 
 	@SideOnly(Side.CLIENT)
-	public boolean func_150936_a(World p_150936_1_, int p_150936_2_, int p_150936_3_, int p_150936_4_, int p_150936_5_, EntityPlayer p_150936_6_, ItemStack p_150936_7_)
+	public boolean func_150936_a(World world, int xcord, int ycord, int zcord, int meta, EntityPlayer player, ItemStack itemStack)
 	{
-		int i1 = p_150936_2_;
-		int j1 = p_150936_3_;
-		int k1 = p_150936_4_;
-		Block block = p_150936_1_.getBlock(p_150936_2_, p_150936_3_, p_150936_4_);
-		int l1 = p_150936_1_.getBlockMetadata(p_150936_2_, p_150936_3_, p_150936_4_);
-		int i2 = l1 & 7;
-		boolean flag = (l1 & 8) != 0;
+		int x1 = xcord;
+		int y1 = ycord;
+		int z1 = zcord;
+		Block block = world.getBlock(xcord, ycord, zcord);
+		int m1 = world.getBlockMetadata(xcord, ycord, zcord);
+		int m2 = m1 & 7;
+		boolean flag = (m1 & 8) != 0;
 
-		if ((p_150936_5_ == 1 && !flag || p_150936_5_ == 0 && flag) && block == singleSlab && i2 == p_150936_7_.getItemDamage())
+		if ((meta == 1 && !flag || meta == 0 && flag) && block == singleSlab && m2 == itemStack.getItemDamage())
 		{
 			return true;
 		}
 		else
 		{
-			if (p_150936_5_ == 0)
+			if (meta == 0)
 			{
-				--p_150936_3_;
+				--ycord;
 			}
 
-			if (p_150936_5_ == 1)
+			if (meta == 1)
 			{
-				++p_150936_3_;
+				++ycord;
 			}
 
-			if (p_150936_5_ == 2)
+			if (meta == 2)
 			{
-				--p_150936_4_;
+				--zcord;
 			}
 
-			if (p_150936_5_ == 3)
+			if (meta == 3)
 			{
-				++p_150936_4_;
+				++zcord;
 			}
 
-			if (p_150936_5_ == 4)
+			if (meta == 4)
 			{
-				--p_150936_2_;
+				--xcord;
 			}
 
-			if (p_150936_5_ == 5)
+			if (meta == 5)
 			{
-				++p_150936_2_;
+				++xcord;
 			}
 
-			Block block1 = p_150936_1_.getBlock(p_150936_2_, p_150936_3_, p_150936_4_);
-			int j2 = p_150936_1_.getBlockMetadata(p_150936_2_, p_150936_3_, p_150936_4_);
-			i2 = j2 & 7;
-			return block1 == singleSlab && i2 == p_150936_7_.getItemDamage() ? true : super.func_150936_a(p_150936_1_, i1, j1, k1, p_150936_5_, p_150936_6_, p_150936_7_);
+			Block block1 = world.getBlock(xcord, ycord, zcord);
+			int j2 = world.getBlockMetadata(xcord, ycord, zcord);
+			m2 = j2 & 7;
+			return true; /*block1 == singleSlab && m2 == itemStack.getItemDamage() ? true : super.func_150936_a(world, x1, y1, z1, meta, player, itemStack);*/
 		}
 	}
 
