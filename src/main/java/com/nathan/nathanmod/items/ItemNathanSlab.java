@@ -82,11 +82,11 @@ public class ItemNathanSlab extends ItemSlab {
 
 			if ((par7 == 1 && !flag || par7 == 0 && flag) && block == singleSlab && j1 == is.getItemDamage())
 			{
-//				if (world.checkNoEntityCollision(doubleSlab.getCollisionBoundingBoxFromPool(world, par4, par5, par6)) && world.setBlock(par4, par5, par6, doubleSlab, j1, 3))
-//				{
-//					world.playSoundEffect((double)((float)par4 + 0.5F), (double)((float)par5 + 0.5F), (double)((float)par6 + 0.5F), doubleSlab.stepSound.func_150496_b(), (doubleSlab.stepSound.getVolume() + 1.0F) / 2.0F, doubleSlab.stepSound.getPitch() * 0.8F);
-//					--is.stackSize;
-//				}
+				if (world.checkNoEntityCollision(doubleSlab.getCollisionBoundingBoxFromPool(world, par4, par5, par6)) && world.setBlock(par4, par5, par6, doubleSlab, j1, 3))
+				{
+					world.playSoundEffect((double)((float)par4 + 0.5F), (double)((float)par5 + 0.5F), (double)((float)par6 + 0.5F), doubleSlab.stepSound.func_150496_b(), (doubleSlab.stepSound.getVolume() + 1.0F) / 2.0F, doubleSlab.stepSound.getPitch() * 0.8F);
+					--is.stackSize;
+				}
 
 				return true;
 			}

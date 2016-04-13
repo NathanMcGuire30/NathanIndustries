@@ -60,10 +60,11 @@ public class NathanSlabs extends BlockSlab {
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta)
     {
-    	if (meta < 0 || (meta >= woodTypes.length && meta < 8)) {
-			meta=0;
-		} else if (meta > 7) {
+    	if (meta > 7) {
 			meta%=8; 
+		} 
+    	if (meta < 0 || (meta >= woodTypes.length && meta <= 7)) {
+			meta=0;
 		}
 		return iconArray[meta];
     }

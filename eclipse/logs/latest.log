@@ -1,23 +1,22 @@
-[08:27:29] [main/INFO]: Setting user: Player141
-[08:27:32] [Client thread/INFO]: LWJGL Version: 2.9.1
-[08:27:32] [Client thread/ERROR]: Couldn't initialize twitch stream
-[08:27:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
-[08:27:47] [Sound Library Loader/INFO]: Sound engine started
-[08:27:57] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[08:27:57] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[08:27:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
-[08:27:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[08:27:58] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[08:27:59] [Sound Library Loader/INFO]: Sound engine started
-[08:28:04] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[08:28:04] [Server thread/INFO]: Generating keypair
-[08:28:05] [Server thread/INFO]: Preparing start region for level 0
-[08:28:06] [Server thread/INFO]: Preparing spawn area: 20%
-[08:28:07] [Server thread/INFO]: Preparing spawn area: 96%
-[08:28:07] [Server thread/INFO]: Changing view distance to 12, from 10
-[08:28:08] [Server thread/INFO]: Player141[local:E:0e3f3af4] logged in with entity id 353 at (149.46418942924166, 66.0, 218.63943990695515)
-[08:28:08] [Server thread/INFO]: Player141 joined the game
-[08:28:25] [Server thread/ERROR]: Encountered an unexpected exception
+[11:50:10] [main/INFO]: Setting user: Player698
+[11:50:12] [Client thread/INFO]: LWJGL Version: 2.9.1
+[11:50:12] [Client thread/ERROR]: Couldn't initialize twitch stream
+[11:50:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[11:50:27] [Sound Library Loader/INFO]: Sound engine started
+[11:50:29] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[11:50:29] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[11:50:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[11:50:30] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:50:31] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:50:31] [Sound Library Loader/INFO]: Sound engine started
+[11:50:37] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[11:50:37] [Server thread/INFO]: Generating keypair
+[11:50:37] [Server thread/INFO]: Preparing start region for level 0
+[11:50:38] [Server thread/INFO]: Preparing spawn area: 87%
+[11:50:39] [Server thread/INFO]: Changing view distance to 12, from 10
+[11:50:40] [Server thread/INFO]: Player698[local:E:37e9ba0b] logged in with entity id 223 at (4.018587485247606, 4.0, 754.2268864940328)
+[11:50:40] [Server thread/INFO]: Player698 joined the game
+[11:50:51] [Server thread/ERROR]: Encountered an unexpected exception
 net.minecraft.util.ReportedException: Ticking memory connection
 	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:198) ~[NetworkSystem.class:?]
 	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) ~[MinecraftServer.class:?]
@@ -26,8 +25,7 @@ net.minecraft.util.ReportedException: Ticking memory connection
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
 	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
 Caused by: java.lang.NullPointerException
-	at com.nathan.nathanmod.items.ItemNathanSlab.func_150946_a(ItemNathanSlab.java:193) ~[ItemNathanSlab.class:?]
-	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:95) ~[ItemNathanSlab.class:?]
+	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:85) ~[ItemNathanSlab.class:?]
 	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:507) ~[ForgeHooks.class:?]
 	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:142) ~[ItemStack.class:?]
 	at net.minecraft.server.management.ItemInWorldManager.activateBlockOrUseItem(ItemInWorldManager.java:422) ~[ItemInWorldManager.class:?]
@@ -37,17 +35,16 @@ Caused by: java.lang.NullPointerException
 	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
 	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) ~[NetworkSystem.class:?]
 	... 5 more
-[08:28:25] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Nathan\Documents\Java\NathanIndustries\eclipse\.\crash-reports\crash-2016-04-13_08.28.25-server.txt
-[08:28:25] [Server thread/INFO]: Stopping server
-[08:28:25] [Server thread/INFO]: Saving players
-[08:28:25] [Server thread/INFO]: Saving worlds
-[08:28:25] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[08:28:25] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[08:28:25] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[08:28:27] [Client thread/FATAL]: Unreported exception thrown!
+[11:50:52] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Nathan\Documents\Java\NathanIndustries\eclipse\.\crash-reports\crash-2016-04-13_11.50.51-server.txt
+[11:50:52] [Server thread/INFO]: Stopping server
+[11:50:52] [Server thread/INFO]: Saving players
+[11:50:52] [Server thread/INFO]: Saving worlds
+[11:50:52] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[11:50:52] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[11:50:52] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[11:50:52] [Client thread/FATAL]: Unreported exception thrown!
 java.lang.NullPointerException
-	at com.nathan.nathanmod.items.ItemNathanSlab.func_150946_a(ItemNathanSlab.java:193) ~[ItemNathanSlab.class:?]
-	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:95) ~[ItemNathanSlab.class:?]
+	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:85) ~[ItemNathanSlab.class:?]
 	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:143) ~[ItemStack.class:?]
 	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:403) ~[PlayerControllerMP.class:?]
 	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1529) ~[Minecraft.class:?]
