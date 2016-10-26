@@ -1,62 +1,84 @@
-[11:50:10] [main/INFO]: Setting user: Player698
-[11:50:12] [Client thread/INFO]: LWJGL Version: 2.9.1
-[11:50:12] [Client thread/ERROR]: Couldn't initialize twitch stream
-[11:50:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
-[11:50:27] [Sound Library Loader/INFO]: Sound engine started
-[11:50:29] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[11:50:29] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[11:50:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
-[11:50:30] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[11:50:31] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[11:50:31] [Sound Library Loader/INFO]: Sound engine started
-[11:50:37] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[11:50:37] [Server thread/INFO]: Generating keypair
-[11:50:37] [Server thread/INFO]: Preparing start region for level 0
-[11:50:38] [Server thread/INFO]: Preparing spawn area: 87%
-[11:50:39] [Server thread/INFO]: Changing view distance to 12, from 10
-[11:50:40] [Server thread/INFO]: Player698[local:E:37e9ba0b] logged in with entity id 223 at (4.018587485247606, 4.0, 754.2268864940328)
-[11:50:40] [Server thread/INFO]: Player698 joined the game
-[11:50:51] [Server thread/ERROR]: Encountered an unexpected exception
-net.minecraft.util.ReportedException: Ticking memory connection
-	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:198) ~[NetworkSystem.class:?]
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) ~[MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614) ~[MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118) ~[IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-Caused by: java.lang.NullPointerException
-	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:85) ~[ItemNathanSlab.class:?]
-	at net.minecraftforge.common.ForgeHooks.onPlaceItemIntoWorld(ForgeHooks.java:507) ~[ForgeHooks.class:?]
-	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:142) ~[ItemStack.class:?]
-	at net.minecraft.server.management.ItemInWorldManager.activateBlockOrUseItem(ItemInWorldManager.java:422) ~[ItemInWorldManager.class:?]
-	at net.minecraft.network.NetHandlerPlayServer.processPlayerBlockPlacement(NetHandlerPlayServer.java:593) ~[NetHandlerPlayServer.class:?]
-	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:74) ~[C08PacketPlayerBlockPlacement.class:?]
-	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:122) ~[C08PacketPlayerBlockPlacement.class:?]
-	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
-	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) ~[NetworkSystem.class:?]
-	... 5 more
-[11:50:52] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Nathan\Documents\Java\NathanIndustries\eclipse\.\crash-reports\crash-2016-04-13_11.50.51-server.txt
-[11:50:52] [Server thread/INFO]: Stopping server
-[11:50:52] [Server thread/INFO]: Saving players
-[11:50:52] [Server thread/INFO]: Saving worlds
-[11:50:52] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[11:50:52] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[11:50:52] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[11:50:52] [Client thread/FATAL]: Unreported exception thrown!
-java.lang.NullPointerException
-	at com.nathan.nathanmod.items.ItemNathanSlab.onItemUse(ItemNathanSlab.java:85) ~[ItemNathanSlab.class:?]
-	at net.minecraft.item.ItemStack.tryPlaceItemIntoWorld(ItemStack.java:143) ~[ItemStack.class:?]
-	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:403) ~[PlayerControllerMP.class:?]
-	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1529) ~[Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2044) ~[Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039) ~[Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_45]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
+[08:50:33] [main/INFO]: Setting user: Player2
+[08:50:36] [Client thread/INFO]: LWJGL Version: 2.9.1
+[08:50:37] [Client thread/ERROR]: Couldn't initialize twitch stream
+[08:50:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[08:50:51] [Sound Library Loader/INFO]: Sound engine started
+[08:50:53] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[08:50:53] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[08:50:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[08:50:54] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[08:50:54] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[08:50:55] [Sound Library Loader/INFO]: Sound engine started
+[08:51:00] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[08:51:00] [Server thread/INFO]: Generating keypair
+[08:51:01] [Server thread/INFO]: Preparing start region for level 0
+[08:51:02] [Server thread/INFO]: Preparing spawn area: 61%
+[08:51:02] [Server thread/INFO]: Changing view distance to 12, from 10
+[08:51:03] [Server thread/INFO]: Player2[local:E:ddfe74d5] logged in with entity id 182 at (33.9309630459625, 4.0, 710.6369859659632)
+[08:51:03] [Server thread/INFO]: Player2 joined the game
+[08:51:28] [Client thread/INFO]: [CHAT] nathanmod:Titanium Leggings, nathanmod:Titanium_Sword, nathanmod:Titanium, nathanmod:Titanium_Shovel, nathanmod:Titanium Chestplate, nathanmod:Titanium_Axe, nathanmod:Titanium_Ingot, nathanmod:Titanium Helmet, nathanmod:Titanium_Pickaxe, nathanmod:Titanium Ore, nathanmod:Titanium Boots, nathanmod:Titanium_Hoe
+[08:51:29] [Client thread/INFO]: [CHAT] nathanmod:Titanium Leggings, nathanmod:Titanium_Sword, nathanmod:Titanium, nathanmod:Titanium_Shovel, nathanmod:Titanium Chestplate, nathanmod:Titanium_Axe, nathanmod:Titanium_Ingot, nathanmod:Titanium Helmet, nathanmod:Titanium_Pickaxe, nathanmod:Titanium Ore, nathanmod:Titanium Boots, nathanmod:Titanium_Hoe
+[08:51:42] [Client thread/INFO]: [CHAT] nathanmod:Titanium_Sword, nathanmod:Titanium_Shovel
+[08:51:45] [Server thread/INFO]: Saving and pausing game...
+[08:51:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[08:51:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[08:51:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[08:58:57] [Client thread/INFO]: Stopping!
+[08:58:57] [Server thread/INFO]: Stopping server
+[08:58:57] [Server thread/INFO]: Saving players
+[08:58:57] [Server thread/INFO[08:59:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[08:59:07] [Sound Library Loader/INFO]: Sound engine started
+[08:59:17] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[08:59:17] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[08:59:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[08:59:18] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[08:59:18] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[08:59:19] [Sound Library Loader/INFO]: Sound engine started
+[08:59:24] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[08:59:24] [Server thread/INFO]: Generating keypair
+[08:59:29] [Server thread/INFO]: Preparing start region for level 0
+[08:59:30] [Server thread/INFO]: Changing view distance to 12, from 10
+[09:00:01] [Server thread/INFO]: Stopping server
+[09:00:01] [Server thread/INFO]: Saving players
+[09:00:01] [Server thread/INFO]: Saving worlds
+[09:00:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[09:00:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[09:00:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[09:00:02] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[09:00:02] [Server thread/INFO]: Generating keypair
+[09:00:03] [Server thread/INFO]: Preparing start region for level 0
+[09:00:03] [Server thread/INFO]: Changing view distance to 12, from 10
+[09:00:04] [Server thread/INFO]: Player561[local:E:465115f6] logged in with entity id 358 at (2.5, 4.0, 750.5)
+[09:00:04] [Server thread/INFO]: Player561 joined the game
+[09:00:13] [Server thread/INFO]: Player561 has just earned the achievement [Taking Inventory]
+[09:00:13] [Client thread/INFO]: [CHAT] Player561 has just earned the achievement [Taking Inventory]
+[09:04:27] [Client thread/INFO]: [CHAT] /gamemode, /give, /gamerule
+[09:04:28] [Server thread/INFO]: [Player561: Set own game mode to Survival Mode]
+[09:04:28] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[09:06:54] [Client thread/INFO]: [CHAT] /gamemode, /give, /gamerule
+[09:06:55] [Server thread/INFO]: [Player561: Set own game mode to Creative Mode]
+[09:06:55] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[09:07:04] [Client thread/INFO]: [CHAT] Saved screenshot as 2016-10-26_09.07.03.png
+[09:07:05] [Client thread/INFO]: [CHAT] Saved screenshot as 2016-10-26_09.07.05.png
+[09:07:08] [Client thread/INFO]: [CHAT] Saved screenshot as 2016-10-26_09.07.08.png
+[09:07:28] [Client thread/INFO]: [CHAT] /gamemode, /give, /gamerule
+[09:07:29] [Server thread/INFO]: [Player561: Set own game mode to Creative Mode]
+[09:07:29] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[09:07:35] [Client thread/INFO]: [CHAT] /testfor, /tellraw, /tell, /toggledownfall, /testforblock, /time, /tp
+[09:07:39] [Server thread/INFO]: [Player561: Set the time to 1000]
+[09:07:40] [Client thread/INFO]: [CHAT] Set the time to 1000
+[09:07:41] [Client thread/INFO]: [CHAT] Saved screenshot as 2016-10-26_09.07.41.png
+[09:07:42] [Client thread/INFO]: [CHAT] Saved screenshot as 2016-10-26_09.07.42.png
+[09:07:47] [Client thread/INFO]: [CHAT] Saved screenshot as 2016-10-26_09.07.47.png
+[09:07:50] [Client thread/INFO]: [CHAT] Saved screenshot as 2016-10-26_09.07.50.png
+[09:07:55] [Server thread/INFO]: Saving and pausing game...
+[09:07:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[09:07:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[09:07:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[09:07:56] [Server thread/INFO]: Stopping server
+[09:07:56] [Server thread/INFO]: Saving players
+[09:07:56] [Server thread/INFO]: Saving worlds
+[09:07:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[09:07:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[09:07:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[09:07:57] [Client thread/INFO]: Stopping!

@@ -17,7 +17,7 @@ import net.minecraft.util.Facing;
 import net.minecraft.world.IBlockAccess;
 
 public class CreativeGlass extends NathanGlass {
-	public static String iconPath = "glass";	//NathanMod.MODID + ":Block_CGlass"
+	public static String iconPath = NathanMod.MODID + ":Block_CGlass";
 
 	public CreativeGlass() {
 		super(Material.anvil, iconPath);

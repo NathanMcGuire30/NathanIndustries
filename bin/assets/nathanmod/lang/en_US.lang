@@ -22,3 +22,20 @@ NathanMod.elmslab.name=Elm Slabs
 Hickory.name=Use the correct metadata next time
 
 item.nathanmod_Titanium_Ingot.name=Titanium Ingot
+item.nathanmod_SpaceSuitFabric.name=Space Suit Fabric
+
+item.nathanmod_TitaniumSword.name=Titanium Sword
+item.nathanmod_TitaniumPickaxe.name=Titanium Pickaxe
+item.nathanmod_TitaniumAxe.name=Titanium Axe
+item.nathanmod_TitaniumShovel.name=Titanium Shovel
+item.nathanmod_TitaniumHoe.name=Titanium Hoe
+
+item.nathanmodhelmetTitanium.name=Titanium Helmet
+item.nathanmodchestplateTitanium.name=Titanium Chestplate
+item.nathanmodleggingsTitanium.name=Titanium Leggings
+item.nathanmodbootsTitanium.name=Titanium Boots
+
+item.nathanmodhelmetSpacesuit.name=Space Suit Helmet
+item.nathanmodchestplateSpacesuit.name=Space Suit Torso
+item.nathanmodleggingsSpacesuit.name=Space Suit Pants
+item.nathanmodbootsSpacesuit.name=Space Suit Boots
