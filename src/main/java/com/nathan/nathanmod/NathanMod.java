@@ -75,9 +75,10 @@ public class NathanMod
     @EventHandler
     public void preinit(FMLPreInitializationEvent event)
     {
-    	WoodTypes = new String[2];
+    	WoodTypes = new String[3];
     	WoodTypes[0] = "Hickory";
     	WoodTypes[1] = "elm";
+    	WoodTypes[2] = "beech";
     }
     
     //initialization

@@ -9,15 +9,19 @@ tile.nathanmod_creativeQuartz.name=Creative Quartz
 
 HickoryPlanks.name=Hickory Wood Planks
 elmPlanks.name=Elm Wood Planks
+BeechPlanks.name=Beech Wood Planks
 
 HickoryLog.name=Hickory Wood
 elmLog.name=Elm Wood
+BeechLog.name=Beech Wood
 
 HickoryLeaves.name=Hickory Leaves
 elmLeaves.name=Elm Leaves
+BeechLeaves.name=Beech Leaves
 
 NathanMod.Hickoryslab.name=Hickory Slabs
 NathanMod.elmslab.name=Elm Slabs
+NathanMod.Beechslab.name=Beech Slabs
 
 Hickory.name=Use the correct metadata next time
 

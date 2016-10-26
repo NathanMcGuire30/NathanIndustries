@@ -15,12 +15,13 @@ public class TreeList implements IWorldGenerator {
     
     //List of trees.  (true, min height, trunkblock, leavesblock, vinesgrow, name)
     //To make a new tree, add one of these
-    private MakeNormalTree hickoryTree = new MakeNormalTree(true, 5, NathanMod.NathanLogs, NathanMod.NathanLeaves, false, 0);
-    private MakeNormalTree elmTree = new MakeNormalTree(true, 5, NathanMod.NathanLogs, NathanMod.NathanLeaves, false, 1);
+    private MakeNormalTree[] generatorArray = new MakeNormalTree[NathanMod.WoodTypes.length];
 
     public TreeList()
     {
-    	
+    	for (int i=0; i<NathanMod.WoodTypes.length; i++) {
+    		generatorArray[i] = new MakeNormalTree(true, 5, NathanMod.NathanLogs, NathanMod.NathanLeaves, false, i);
+    	}
     }
 
     @Override
@@ -38,15 +39,11 @@ public class TreeList implements IWorldGenerator {
     	String s = world.getBiomeGenForCoords(x, z).biomeName;
         if (s.toLowerCase().contains("Forest".toLowerCase()))			//If biome name includes forest
         {
-        	//Generate new random numbers and make a Hickory tree
-	    	x = (int) (chunkX*16 + (16*Math.random()));
-	    	z = (int) (chunkZ*16 + (16*Math.random()));
-	        hickoryTree.generate(world, random, x, world.getHeightValue(x, z), z);
-	        
-	        //Generate new random numbers and make a Elm tree
-	        x = (int) (chunkX*16 + (16*Math.random()));
-	    	z = (int) (chunkZ*16 + (16*Math.random()));
-	        elmTree.generate(world, random, x, world.getHeightValue(x, z), z);
+        	for (int i=0; i<NathanMod.WoodTypes.length; i++) {
+        		x = (int) (chunkX*16 + (16*Math.random()));
+    	    	z = (int) (chunkZ*16 + (16*Math.random()));
+        		generatorArray[i].generate(world, random, x, world.getHeightValue(x, z), z);
+        	}
         }
 	}
 }
