@@ -20,7 +20,7 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 public class NathanMod
 {
     public static final String MODID = "nathanmod";
-    public static final String VERSION = "3.2";
+    public static final String VERSION = "4.0";
     public static final String NAME = "Nathan Industries";
     
     //Creative tab
