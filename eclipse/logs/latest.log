@@ -1,31 +1,35 @@
-[16:07:15] [main/INFO]: Setting user: Player883
-[16:07:17] [Client thread/INFO]: LWJGL Version: 2.9.1
-[16:07:18] [Client thread/ERROR]: Couldn't initialize twitch stream
-[16:07:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
-[16:07:32] [Sound Library Loader/INFO]: Sound engine started
-[16:07:35] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[16:07:35] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[16:07:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
-[16:07:36] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:07:36] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:07:37] [Sound Library Loader/INFO]: Sound engine started
-[16:07:49] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:07:49] [Server thread/INFO]: Generating keypair
-[16:07:50] [Server thread/INFO]: Preparing start region for level 0
-[16:07:51] [Server thread/INFO]: Preparing spawn area: 7%
-[16:07:52] [Server thread/INFO]: Changing view distance to 12, from 10
-[16:07:53] [Server thread/INFO]: Player883[local:E:9500efb3] logged in with entity id 244 at (251.82801305178558, 74.48937758587034, 73.35401463491411)
-[16:07:53] [Server thread/INFO]: Player883 joined the game
-[16:08:36] [Server thread/INFO]: Player883 has just earned the achievement [Taking Inventory]
-[16:08:36] [Client thread/INFO]: [CHAT] Player883 has just earned the achievement [Taking Inventory]
-[16:09:45] [Server thread/INFO]: Saving and pausing game...
-[16:09:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:09:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:09:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:09:46] [Server thread/INFO]: Stopping server
-[16:09:46] [Server thread/INFO]: Saving players
-[16:09:46] [Server thread/INFO]: Saving worlds
-[16:09:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:09:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:09:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:09:47] [Client thread/INFO]: Stopping!
+[10:34:37] [main/INFO]: Setting user: Player690
+[10:34:39] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:34:40] [Client thread/ERROR]: Couldn't initialize twitch stream
+[10:34:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[10:34:57] [Sound Library Loader/INFO]: Sound engine started
+[10:35:11] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[10:35:11] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[10:35:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Nathan Industries
+[10:35:12] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:35:12] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:35:13] [Sound Library Loader/INFO]: Sound engine started
+[10:35:29] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[10:35:29] [Server thread/INFO]: Generating keypair
+[10:35:29] [Server thread/INFO]: Preparing start region for level 0
+[10:35:30] [Server thread/INFO]: Preparing spawn area: 11%
+[10:35:32] [Server thread/INFO]: Changing view distance to 12, from 10
+[10:35:32] [Server thread/INFO]: Player690[local:E:57fed0e4] logged in with entity id 236 at (244.93798513954383, 74.50295828114528, 95.90465514107622)
+[10:35:32] [Server thread/INFO]: Player690 joined the game
+[10:35:58] [Server thread/INFO]: Player690 has just earned the achievement [Taking Inventory]
+[10:35:58] [Client thread/INFO]: [CHAT] Player690 has just earned the achievement [Taking Inventory]
+[10:38:08] [Client thread/INFO]: Warning: Clientside chunk ticking took 206 ms
+[10:38:08] [Client thread/INFO]: Warning: Clientside chunk ticking took 131 ms
+[10:39:51] [Client thread/INFO]: Warning: Clientside chunk ticking took 101 ms
+[10:39:52] [Client thread/INFO]: Warning: Clientside chunk ticking took 109 ms
+[10:40:28] [Server thread/INFO]: Saving and pausing game...
+[10:40:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:40:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:40:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:40:29] [Server thread/INFO]: Stopping server
+[10:40:29] [Server thread/INFO]: Saving players
+[10:40:29] [Server thread/INFO]: Saving worlds
+[10:40:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:40:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:40:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:40:31] [Client thread/INFO]: Stopping!

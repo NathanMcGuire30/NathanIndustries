@@ -111,12 +111,9 @@ public class BasicSappling extends BlockBush implements IGrowable {
     {
         int l = world.getBlockMetadata(x, y, z);
 
-        if ((l & 8) == 0)
-        {
+        if ((l & 8) == 0) {
             world.setBlockMetadataWithNotify(x, y, z, l | 8, 4);
-        }
-        else
-        {
+        } else {
             this.func_149878_d(world, x, y, z, random);
         }
     }
@@ -126,7 +123,6 @@ public class BasicSappling extends BlockBush implements IGrowable {
     {
         if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(world, random, x, y, z)) return;
         int meta = world.getBlockMetadata(x, y, z) & 7;
-        //Object object = random.nextInt(10) == 0 ? new WorldGenBigTree(true) : new WorldGenTrees(true);
         MakeNormalTree object;
         int i1 = 0;
         int j1 = 0;
