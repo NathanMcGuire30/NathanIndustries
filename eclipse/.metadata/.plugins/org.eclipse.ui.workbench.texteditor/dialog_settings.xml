@@ -8,6 +8,8 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="planks"/>
+			<item value="func_149880_a"/>
 			<item value="tool"/>
 			<item value="version"/>
 			<item value="isDoub"/>

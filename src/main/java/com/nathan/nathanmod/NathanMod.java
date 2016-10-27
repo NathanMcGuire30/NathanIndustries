@@ -43,6 +43,7 @@ public class NathanMod
 	public static Block NathanLeaves;
 	public static Block NathanSlabs;
 	public static Block NathanSlabsDouble;
+	public static Block NathanSapplings;
 	
 	//Items
 	public static Item TitaniumIngot;

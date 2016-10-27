@@ -5,4 +5,10 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item.ToolMaterial"/>
 <fullyQualifiedTypeName name="com.nathan.nathanmod.NathanMod"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemPickaxe"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemAxe"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemHoe"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemSpade"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="com.nathan.nathanmod.world.TreeList"/>
 </qualifiedTypeNameHistroy>

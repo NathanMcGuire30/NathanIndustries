@@ -15,7 +15,7 @@ public class TreeList implements IWorldGenerator {
     
     //List of trees.  (true, min height, trunkblock, leavesblock, vinesgrow, name)
     //To make a new tree, add one of these
-    private MakeNormalTree[] generatorArray = new MakeNormalTree[NathanMod.WoodTypes.length];
+    public static MakeNormalTree[] generatorArray = new MakeNormalTree[NathanMod.WoodTypes.length];
 
     public TreeList()
     {

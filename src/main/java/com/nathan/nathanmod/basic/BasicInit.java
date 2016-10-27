@@ -39,6 +39,10 @@ public class BasicInit {
     	GameRegistry.registerBlock(NathanMod.NathanPlanks, MultiItemPlanks.class, "NathanPlanks");
     	NathanMod.NathanLeaves = new NathanLeaves();							//Leaves1
     	GameRegistry.registerBlock(NathanMod.NathanLeaves, MultiItemLeaves.class, "NathanLeaves");
+    	NathanMod.NathanSapplings = new BasicSappling();
+    	GameRegistry.registerBlock(NathanMod.NathanSapplings, MultiItemSapplings.class, "NathanSapplings");
+
+    	
     	
     	/*
     	NathanMod.NathanSlabs = new NathanSlabs(true);							//Half Slab
