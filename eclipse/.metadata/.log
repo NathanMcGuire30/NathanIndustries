@@ -957,3 +957,6 @@ Caused by: java.io.IOException: The process cannot access the file because anoth
 	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:187)
 	... 3 more
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-10-26 21:05:02.063
+!MESSAGE The workspace will exit with unsaved changes in this session.

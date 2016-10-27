@@ -1,0 +1,16 @@
+package com.nathan.nathanmod.items;
+
+import com.nathan.nathanmod.NathanMod;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemPickaxe;
+
+public class BasicAxe extends ItemPickaxe {
+
+	public BasicAxe(ToolMaterial material, String unlocalizedName) {
+		super(material);
+		this.setUnlocalizedName(unlocalizedName);
+        this.setTextureName(NathanMod.MODID + ":" + unlocalizedName);
+        setCreativeTab(CreativeTabs.tabCombat);
+	}
+}

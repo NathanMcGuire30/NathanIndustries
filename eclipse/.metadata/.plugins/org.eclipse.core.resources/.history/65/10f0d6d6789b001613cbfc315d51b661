@@ -1,0 +1,16 @@
+package com.nathan.nathanmod.items;
+
+import com.nathan.nathanmod.NathanMod;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemAxe;
+
+public class BasicHoe extends ItemAxe {
+
+	public BasicHoe(ToolMaterial material, String unlocalizedName) {
+		super(material);
+		this.setUnlocalizedName(unlocalizedName);
+        this.setTextureName(NathanMod.MODID + ":" + unlocalizedName);
+        setCreativeTab(CreativeTabs.tabTools);
+	}
+}

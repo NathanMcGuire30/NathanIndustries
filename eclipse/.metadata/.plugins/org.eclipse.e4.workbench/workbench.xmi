@@ -150,7 +150,7 @@
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_roZ-L-MBEeWQK-ECyHLLaA" elementId="org.eclipse.ui.editorss" selectedElement="_roZ-MOMBEeWQK-ECyHLLaA">
       <children xsi:type="basic:PartSashContainer" xmi:id="_roZ-MOMBEeWQK-ECyHLLaA" selectedElement="_roZ-MeMBEeWQK-ECyHLLaA" horizontal="true">
-        <children xsi:type="basic:PartStack" xmi:id="_roZ-MeMBEeWQK-ECyHLLaA" elementId="org.eclipse.e4.primaryDataStack" containerData="2416" selectedElement="_roZ-NeMBEeWQK-ECyHLLaA">
+        <children xsi:type="basic:PartStack" xmi:id="_roZ-MeMBEeWQK-ECyHLLaA" elementId="org.eclipse.e4.primaryDataStack" containerData="3163" selectedElement="_roZ-NeMBEeWQK-ECyHLLaA">
           <tags>org.eclipse.e4.primaryDataStack</tags>
           <tags>EditorStack</tags>
           <tags>active</tags>
@@ -183,7 +183,7 @@
             <toolbar xmi:id="_roZ-muMBEeWQK-ECyHLLaA" elementId="org.eclipse.egit.ui.StagingView" visible="false"/>
           </children>
         </children>
-        <children xsi:type="basic:PartSashContainer" xmi:id="_roZ-oeMBEeWQK-ECyHLLaA" containerData="7584" selectedElement="_roZ-ouMBEeWQK-ECyHLLaA">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_roZ-oeMBEeWQK-ECyHLLaA" containerData="6837" selectedElement="_roZ-ouMBEeWQK-ECyHLLaA">
           <children xsi:type="basic:PartStack" xmi:id="_roZ-ouMBEeWQK-ECyHLLaA" elementId="PartStack@13e59265" containerData="6508" selectedElement="_MBBvUJu4EeawkYmHhS3NLQ">
             <children xsi:type="basic:Part" xmi:id="_roZ-o-MBEeWQK-ECyHLLaA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NathanMod.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
               <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NathanMod.java&quot; partName=&quot;NathanMod.java&quot; title=&quot;NathanMod.java&quot; tooltip=&quot;Minecraft/src/main/java/com/nathan/nathanmod/NathanMod.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Minecraft/src/main/java/com/nathan/nathanmod/NathanMod.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;39&quot; selectionOffset=&quot;1158&quot; selectionTopPixel=&quot;676&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -366,7 +366,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_roakR-MBEeWQK-ECyHLLaA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_oKemIJvgEeacsYV1a90FYQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_rocZS-MBEeWQK-ECyHLLaA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_B6bWIJvhEeaLQdJfnLfB6A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_rocZS-MBEeWQK-ECyHLLaA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_roakVeMBEeWQK-ECyHLLaA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -390,7 +390,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_roakleMBEeWQK-ECyHLLaA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_oKkswJvgEeacsYV1a90FYQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_rob1JOMBEeWQK-ECyHLLaA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_B6hcwJvhEeaLQdJfnLfB6A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_rob1JOMBEeWQK-ECyHLLaA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_roakoOMBEeWQK-ECyHLLaA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
