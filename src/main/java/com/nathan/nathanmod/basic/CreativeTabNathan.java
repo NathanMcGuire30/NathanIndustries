@@ -13,12 +13,15 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class CreativeTabNathan extends CreativeTabs {
-    public CreativeTabNathan(String tabLabel) {
+	private Block iconBlock;
+	
+    public CreativeTabNathan(String tabLabel, Block blockForIcon) {
         super(tabLabel);
+        iconBlock = blockForIcon;
     }
 
 	@Override
 	public Item getTabIconItem() {
-		return Item.getItemFromBlock(NathanMod.creativeTitanium);
+		return Item.getItemFromBlock(iconBlock);
 	}
 }
