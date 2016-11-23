@@ -23,8 +23,7 @@ public class MakeNormalTree extends WorldGenAbstractTree {
 	private int meta;
 
 	// Constructor
-	public MakeNormalTree(boolean p_i2028_1_, int minTreeHeight, Block trunk, Block leaves, boolean vinesGrow,
-			int meta) {
+	public MakeNormalTree(boolean p_i2028_1_, int minTreeHeight, Block trunk, Block leaves, boolean vinesGrow, int meta) {
 		super(p_i2028_1_);
 		this.minTreeHeight = minTreeHeight;
 		this.trunkBlock = trunk;
@@ -134,10 +133,8 @@ public class MakeNormalTree extends WorldGenAbstractTree {
 								if (Math.abs(j2) != l1 || Math.abs(l2) != l1 || random.nextInt(2) != 0 && i3 != 0) {
 									Block block1 = world.getBlock(i2, k1, k2);
 
-									if (block1.isAir(world, i2, k1, k2) || block1.isLeaves(world, i2, k1, k2)
-											|| block1.isLadder(world, i2, k1, k2, null)) {
-										this.setBlockAndNotifyAdequately(world, i2, k1, k2, this.leavesBlock,
-												this.meta);
+									if (block1.isAir(world, i2, k1, k2) || block1.isLeaves(world, i2, k1, k2) || block1.isLadder(world, i2, k1, k2, null)) {
+										this.setBlockAndNotifyAdequately(world, i2, k1, k2, this.leavesBlock, this.meta);
 									}
 								}
 							}

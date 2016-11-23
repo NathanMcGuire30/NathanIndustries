@@ -39,9 +39,7 @@ public class NathanGlass extends Block {
 		Block block = blockAccess.getBlock(cordX, cordY, cordZ);
 
 		if (this == NathanMod.creativeGlass) {
-			if (blockAccess.getBlockMetadata(cordX, cordY, cordZ) != blockAccess.getBlockMetadata(
-					cordX - Facing.offsetsXForSide[side], cordY - Facing.offsetsYForSide[side],
-					cordZ - Facing.offsetsZForSide[side])) {
+			if (blockAccess.getBlockMetadata(cordX, cordY, cordZ) != blockAccess.getBlockMetadata(cordX - Facing.offsetsXForSide[side], cordY - Facing.offsetsYForSide[side], cordZ - Facing.offsetsZForSide[side])) {
 				return true;
 			}
 

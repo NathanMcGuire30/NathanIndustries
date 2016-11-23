@@ -11,4 +11,8 @@
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="com.nathan.nathanmod.world.TreeList"/>
 <fullyQualifiedTypeName name="com.nathan.nathanmod.NathanMod"/>
+<fullyQualifiedTypeName name="com.nathan.nathanmod.world.MakeBigTree"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenAbstractTree"/>
+<fullyQualifiedTypeName name="com.nathan.nathanmod.world.MakeBigTree2"/>
 </qualifiedTypeNameHistroy>

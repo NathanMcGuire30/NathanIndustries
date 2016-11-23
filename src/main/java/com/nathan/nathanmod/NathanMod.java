@@ -20,7 +20,7 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 public class NathanMod
 {
     public static final String MODID = "nathanmod";
-    public static final String VERSION = "4.0";
+    public static final String VERSION = "4.1";
     public static final String NAME = "Nathan Industries";
     
     //Wood types
@@ -73,8 +73,7 @@ public class NathanMod
 	
 	//pre-initialization
     @EventHandler
-    public void preinit(FMLPreInitializationEvent event)
-    {
+    public void preinit(FMLPreInitializationEvent event) {
     	WoodTypes = new String[3];
     	WoodTypes[0] = "Hickory";
     	WoodTypes[1] = "elm";
