@@ -1,0 +1,19 @@
+# Build and Bins
+/.gradle/
+/build/
+/bin/
+/out/
+
+# IDEs
+.classpath
+.project
+.settings/
+.idea/
+eclipse/*
+*.iml
+*.ipr
+*.iws
+
+# System
+Thumbs.db
+.DS_Store
