@@ -1,8 +1,8 @@
 # Build and Bins
-.gradle/
-build/
-bin/
-out/
+/.gradle/
+/build/
+/bin/
+/out/
 
 # IDEs
 .classpath
