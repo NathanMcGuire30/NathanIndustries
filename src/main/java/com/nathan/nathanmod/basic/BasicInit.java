@@ -13,7 +13,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 //Class handles all the blocks and recipes
 public class BasicInit {
 	//Blocks
-	public static void BlockInit() {
+	public static void blockInit() {
 		//Creative blocks
 		NathanMod.creativeTitanium = new CreativeTitanium();				//Creative Titanium
     	GameRegistry.registerBlock(NathanMod.creativeTitanium, "Creative_Titanium");
@@ -29,18 +29,18 @@ public class BasicInit {
     	GameRegistry.registerBlock(NathanMod.creativeQuartz, "Creative_Quartz");
     	
     	//Blocks
-    	NathanMod.Titanium = new Titanium();								//Normal Titanium
-    	GameRegistry.registerBlock(NathanMod.Titanium, "Titanium");
-    	NathanMod.TitaniumOre = new TitaniumOre();							//Titanium Ore
-    	GameRegistry.registerBlock(NathanMod.TitaniumOre, "Titanium_Ore");
-    	NathanMod.NathanLogs = new NathanLogs();								//Logs1
-    	GameRegistry.registerBlock(NathanMod.NathanLogs, MultiItemLog.class, "NathanLogs");
-    	NathanMod.NathanPlanks = new NathanPlanks("NathanPlanks");				//Planks1
-    	GameRegistry.registerBlock(NathanMod.NathanPlanks, MultiItemPlanks.class, "NathanPlanks");
-    	NathanMod.NathanLeaves = new NathanLeaves();							//Leaves1
-    	GameRegistry.registerBlock(NathanMod.NathanLeaves, MultiItemLeaves.class, "NathanLeaves");
-    	NathanMod.NathanSapplings = new BasicSappling();
-    	GameRegistry.registerBlock(NathanMod.NathanSapplings, MultiItemSapplings.class, "NathanSapplings");
+    	NathanMod.titanium = new Titanium();								//Normal Titanium
+    	GameRegistry.registerBlock(NathanMod.titanium, "Titanium");
+    	NathanMod.titaniumOre = new TitaniumOre();							//Titanium Ore
+    	GameRegistry.registerBlock(NathanMod.titaniumOre, "Titanium_Ore");
+    	NathanMod.nathanLogs = new NathanLogs();								//Logs1
+    	GameRegistry.registerBlock(NathanMod.nathanLogs, MultiItemLog.class, "NathanLogs");
+    	NathanMod.nathanPlanks = new NathanPlanks("NathanPlanks");				//Planks1
+    	GameRegistry.registerBlock(NathanMod.nathanPlanks, MultiItemPlanks.class, "NathanPlanks");
+    	NathanMod.nathanLeaves = new NathanLeaves();							//Leaves1
+    	GameRegistry.registerBlock(NathanMod.nathanLeaves, MultiItemLeaves.class, "NathanLeaves");
+    	NathanMod.nathanSapplings = new BasicSappling();
+    	GameRegistry.registerBlock(NathanMod.nathanSapplings, MultiItemSapplings.class, "NathanSapplings");
 
     	
     	
@@ -55,13 +55,13 @@ public class BasicInit {
 	}
 	
 	//Items
-	public static void ItemInit() {
+	public static void itemInit() {
 		//Titanium Ingot
-		NathanMod.TitaniumIngot = new TitaniumIngot();
-		GameRegistry.registerItem(NathanMod.TitaniumIngot, "Titanium_Ingot");
+		NathanMod.titaniumIngot = new TitaniumIngot();
+		GameRegistry.registerItem(NathanMod.titaniumIngot, "Titanium_Ingot");
 		//Space Suit Material
-		NathanMod.SpaceSuitMaterial = new SpaceSuitFabric();
-		GameRegistry.registerItem(NathanMod.SpaceSuitMaterial, "Space_Suit_Fabric");
+		NathanMod.spaceSuitMaterial = new SpaceSuitFabric();
+		GameRegistry.registerItem(NathanMod.spaceSuitMaterial, "Space_Suit_Fabric");
 		
 		//Tools
 		NathanMod.TitaniumSword = new BasicSword(NathanMod.TITANIUMTOOL, "TitaniumSword");
@@ -96,54 +96,54 @@ public class BasicInit {
 	}
 	
 	//Recipes
-	public static void RecipeInit() {
+	public static void recipeInit() {
 		//Creative Glass
 		GameRegistry.addRecipe(new ItemStack(NathanMod.creativeGlass), new Object[]{"AAA", "ABA", "AAA", 'A', Blocks.diamond_block, 'B', Blocks.glass});
 		//Creative Titanium
-		GameRegistry.addRecipe(new ItemStack(NathanMod.creativeTitanium), new Object[]{"AAA", "ABA", "AAA", 'A', Blocks.diamond_block, 'B', NathanMod.Titanium});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.creativeTitanium), new Object[]{"AAA", "ABA", "AAA", 'A', Blocks.diamond_block, 'B', NathanMod.titanium});
 		//Creative Stone Brick
 		GameRegistry.addRecipe(new ItemStack(NathanMod.creativeStoneBrick), new Object[]{"AAA","ABA","AAA",'A', Blocks.diamond_block, 'B', Blocks.stonebrick});
 		//Creative Quartz
 		GameRegistry.addRecipe(new ItemStack(NathanMod.creativeQuartz), new Object[]{ "AAA", "ABA", "AAA", 'A', Blocks.diamond_block, 'B', Blocks.quartz_block});
 		
 		//Titanium
-		GameRegistry.addRecipe(new ItemStack(NathanMod.Titanium), new Object[]{ "AAA", "AAA", "AAA", 'A', NathanMod.TitaniumIngot});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.titanium), new Object[]{ "AAA", "AAA", "AAA", 'A', NathanMod.titaniumIngot});
 		
 		//Titanium Ingot
-		GameRegistry.addSmelting(NathanMod.TitaniumOre, new ItemStack(NathanMod.TitaniumIngot), 0.5F);
+		GameRegistry.addSmelting(NathanMod.titaniumOre, new ItemStack(NathanMod.titaniumIngot), 0.5F);
 		//Titanium Ingot from titanium block
-		GameRegistry.addShapelessRecipe(new ItemStack(NathanMod.TitaniumIngot, 9, 1), new Object[]{new ItemStack(NathanMod.Titanium, 1, 1)});
+		GameRegistry.addShapelessRecipe(new ItemStack(NathanMod.titaniumIngot, 9, 1), new Object[]{new ItemStack(NathanMod.titanium, 1, 1)});
 		//Space Suit Fabric
-		GameRegistry.addRecipe(new ItemStack(NathanMod.SpaceSuitMaterial), new Object[]{ "AAA", "CBC", "AAA", 'A', Items.leather, 'B', Items.redstone, 'C', Items.iron_ingot});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.spaceSuitMaterial), new Object[]{ "AAA", "CBC", "AAA", 'A', Items.leather, 'B', Items.redstone, 'C', Items.iron_ingot});
 		
 		//Things for all wood metadatas ---------------------------------------------------------------------------------
-		for (int i=0; i<NathanMod.WoodTypes.length; i++) {
+		for (int i=0; i<NathanMod.woodTypes.length; i++) {
 			//Make planks from logs
-			GameRegistry.addShapelessRecipe(new ItemStack(NathanMod.NathanPlanks, 4, i), new Object[]{new ItemStack(NathanMod.NathanLogs, 1, i)});
+			GameRegistry.addShapelessRecipe(new ItemStack(NathanMod.nathanPlanks, 4, i), new Object[]{new ItemStack(NathanMod.nathanLogs, 1, i)});
 			//Make sticks from planks
-			GameRegistry.addRecipe(new ItemStack(Items.stick, 4), "A", "A", 'A', new ItemStack(NathanMod.NathanPlanks, 1, i));
+			GameRegistry.addRecipe(new ItemStack(Items.stick, 4), "A", "A", 'A', new ItemStack(NathanMod.nathanPlanks, 1, i));
 			//Make crafting table from planks
-			GameRegistry.addRecipe(new ItemStack(Blocks.crafting_table, 1), "AA", "AA", 'A', new ItemStack(NathanMod.NathanPlanks, 1, i));
+			GameRegistry.addRecipe(new ItemStack(Blocks.crafting_table, 1), "AA", "AA", 'A', new ItemStack(NathanMod.nathanPlanks, 1, i));
 		}
 		
 		//Tool recipies ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumSword), new Object[]{" A ", " A ", " B ", 'A', NathanMod.TitaniumIngot, 'B', Items.stick});
-		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumPickaxe), new Object[]{"AAA", " B ", " B ", 'A', NathanMod.TitaniumIngot, 'B', Items.stick});
-		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumAxe), new Object[]{"AA ", "AB ", " B ", 'A', NathanMod.TitaniumIngot, 'B', Items.stick});
-		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumShovel), new Object[]{" A ", " B ", " B ", 'A', NathanMod.TitaniumIngot, 'B', Items.stick});
-		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumHoe), new Object[]{"AA ", " B ", " B ", 'A', NathanMod.TitaniumIngot, 'B', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumSword), new Object[]{" A ", " A ", " B ", 'A', NathanMod.titaniumIngot, 'B', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumPickaxe), new Object[]{"AAA", " B ", " B ", 'A', NathanMod.titaniumIngot, 'B', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumAxe), new Object[]{"AA ", "AB ", " B ", 'A', NathanMod.titaniumIngot, 'B', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumShovel), new Object[]{" A ", " B ", " B ", 'A', NathanMod.titaniumIngot, 'B', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumHoe), new Object[]{"AA ", " B ", " B ", 'A', NathanMod.titaniumIngot, 'B', Items.stick});
 		
 		//Armor recipies -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 		//Titanium Helmet
-		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumHelmet), new Object[]{"AAA", "A A", 'A', NathanMod.TitaniumIngot });
-		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumChestplate), new Object[]{"A A", "AAA", "AAA", 'A', NathanMod.TitaniumIngot});
-		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumLeggings), new Object[]{"AAA", "A A", "A A", 'A', NathanMod.TitaniumIngot});
-		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumBoots), new Object[]{"A A", "A A", 'A', NathanMod.TitaniumIngot});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumHelmet), new Object[]{"AAA", "A A", 'A', NathanMod.titaniumIngot });
+		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumChestplate), new Object[]{"A A", "AAA", "AAA", 'A', NathanMod.titaniumIngot});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumLeggings), new Object[]{"AAA", "A A", "A A", 'A', NathanMod.titaniumIngot});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.TitaniumBoots), new Object[]{"A A", "A A", 'A', NathanMod.titaniumIngot});
 		
 		//Space Suit
-		GameRegistry.addRecipe(new ItemStack(NathanMod.SpacesuitHelmet), new Object[]{"AAA", "A A", 'A', NathanMod.SpaceSuitMaterial});
-		GameRegistry.addRecipe(new ItemStack(NathanMod.SpacesuitChestplate), new Object[]{"A A", "AAA", "AAA", 'A', NathanMod.SpaceSuitMaterial});
-		GameRegistry.addRecipe(new ItemStack(NathanMod.SpacesuitLeggings), new Object[]{"AAA", "A A", "A A", 'A', NathanMod.SpaceSuitMaterial});
-		GameRegistry.addRecipe(new ItemStack(NathanMod.SpacesuitBoots), new Object[]{"A A", "A A", 'A', NathanMod.SpaceSuitMaterial});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.SpacesuitHelmet), new Object[]{"AAA", "A A", 'A', NathanMod.spaceSuitMaterial});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.SpacesuitChestplate), new Object[]{"A A", "AAA", "AAA", 'A', NathanMod.spaceSuitMaterial});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.SpacesuitLeggings), new Object[]{"AAA", "A A", "A A", 'A', NathanMod.spaceSuitMaterial});
+		GameRegistry.addRecipe(new ItemStack(NathanMod.SpacesuitBoots), new Object[]{"A A", "A A", 'A', NathanMod.spaceSuitMaterial});
 	}
 }

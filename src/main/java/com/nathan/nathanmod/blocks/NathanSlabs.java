@@ -30,12 +30,12 @@ public class NathanSlabs extends BlockSlab {
 		if (isHalf == true) {
 			this.setCreativeTab(CreativeTabs.tabBlock);
 		}
-		if (NathanMod.WoodTypes.length < 8) {
-			woodTypes = new String[NathanMod.WoodTypes.length];
-			woodTypes = NathanMod.WoodTypes;
+		if (NathanMod.woodTypes.length < 8) {
+			woodTypes = new String[NathanMod.woodTypes.length];
+			woodTypes = NathanMod.woodTypes;
 		} else {
 			woodTypes = new String[8];
-			woodTypes = Arrays.copyOfRange(NathanMod.WoodTypes, 0, 7);
+			woodTypes = Arrays.copyOfRange(NathanMod.woodTypes, 0, 7);
 		}
 		isDouble = !isHalf;
 	}
@@ -80,7 +80,7 @@ public class NathanSlabs extends BlockSlab {
      */
     protected ItemStack createStackedBlock(int meta)
     {
-    	return new ItemStack(NathanMod.NathanSlabs, meta);
+    	return new ItemStack(NathanMod.nathanSlabs, meta);
     }
 
     //Get unlocalised name or something

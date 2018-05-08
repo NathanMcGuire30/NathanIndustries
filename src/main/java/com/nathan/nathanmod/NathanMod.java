@@ -20,31 +20,31 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 public class NathanMod
 {
     public static final String MODID = "nathanmod";
-    public static final String VERSION = "4.1";
+    public static final String VERSION = "4.2";
     public static final String NAME = "Nathan Industries";
     
     //Wood types
-    public static String[] WoodTypes;
+    public static String[] woodTypes;
     
     //Blocks
     public static Block creativeTitanium;
     public static Block creativeGlass;
     public static Block creativeStoneBrick;
-	public static Block Titanium;
-	public static Block TitaniumOre;
+	public static Block titanium;
+	public static Block titaniumOre;
 	public static Block creativeTitaniumOLD;
 	public static Block creativeQuartz;
 	public static Block creativeGlassOLD;
-	public static Block NathanLogs;
-	public static Block NathanPlanks;
-	public static Block NathanLeaves;
-	public static Block NathanSlabs;
-	public static Block NathanSlabsDouble;
-	public static Block NathanSapplings;
+	public static Block nathanLogs;
+	public static Block nathanPlanks;
+	public static Block nathanLeaves;
+	public static Block nathanSlabs;
+	public static Block nathanSlabsDouble;
+	public static Block nathanSapplings;
 	
 	//Items
-	public static Item TitaniumIngot;
-	public static Item SpaceSuitMaterial;
+	public static Item titaniumIngot;
+	public static Item spaceSuitMaterial;
 	
 	public static Item TitaniumSword;
 	public static Item TitaniumPickaxe;
@@ -74,21 +74,21 @@ public class NathanMod
 	//pre-initialization
     @EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-    	WoodTypes = new String[3];
-    	WoodTypes[0] = "Hickory";
-    	WoodTypes[1] = "elm";
-    	WoodTypes[2] = "beech";
+    	woodTypes = new String[3];
+    	woodTypes[0] = "Hickory";
+    	woodTypes[1] = "Elm";
+    	woodTypes[2] = "Beech";
     }
     
     //initialization
     @EventHandler
     public void init(FMLInitializationEvent event) {
-    	BasicInit.BlockInit();				//registers all the blocks
-    	BasicInit.ItemInit();				//Registers all items
-    	BasicInit.RecipeInit();				//registers all the recipes
+    	BasicInit.blockInit();				//registers all the blocks
+    	BasicInit.itemInit();				//Registers all items
+    	BasicInit.recipeInit();				//registers all the recipes
     	
     	//World block generator
-    	GameRegistry.registerWorldGenerator(new WorldGenBasicMineable(NathanMod.TitaniumOre, 13), 0);
+    	GameRegistry.registerWorldGenerator(new WorldGenBasicMineable(NathanMod.titaniumOre, 13), 0);
     	GameRegistry.registerWorldGenerator(new TreeList(), 0);
     }
 }

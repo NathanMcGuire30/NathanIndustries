@@ -43,12 +43,12 @@ public class BasicSappling extends BlockBush implements IGrowable {
         this.setCreativeTab(CreativeTabs.tabDecorations);
         
         //Create wood types array
-        if (NathanMod.WoodTypes.length < 16) {
-			woodTypes = new String[NathanMod.WoodTypes.length];
-			woodTypes = NathanMod.WoodTypes;
+        if (NathanMod.woodTypes.length < 16) {
+			woodTypes = new String[NathanMod.woodTypes.length];
+			woodTypes = NathanMod.woodTypes;
 		} else {
 			woodTypes = new String[16];
-			woodTypes = Arrays.copyOfRange(NathanMod.WoodTypes, 0, 15);
+			woodTypes = Arrays.copyOfRange(NathanMod.woodTypes, 0, 15);
 		}
     }
 	
@@ -133,9 +133,9 @@ public class BasicSappling extends BlockBush implements IGrowable {
         MakeBigTree canopyTreeGen;
         MakeBigTree2 bigTreeGen;
 	
-        treeGen = new MakeNormalTree(true, 5, NathanMod.NathanLogs, NathanMod.NathanLeaves, false, meta);
-        canopyTreeGen = new MakeBigTree(true, 4, NathanMod.NathanLogs, NathanMod.NathanLeaves, meta);
-        bigTreeGen = new MakeBigTree2(true, NathanMod.NathanLogs, NathanMod.NathanLeaves, meta);
+        treeGen = new MakeNormalTree(true, 5, NathanMod.nathanLogs, NathanMod.nathanLeaves, false, meta);
+        canopyTreeGen = new MakeBigTree(true, 4, NathanMod.nathanLogs, NathanMod.nathanLeaves, meta);
+        bigTreeGen = new MakeBigTree2(true, NathanMod.nathanLogs, NathanMod.nathanLeaves, meta);
 
         Block block = Blocks.air;
         if (flag)

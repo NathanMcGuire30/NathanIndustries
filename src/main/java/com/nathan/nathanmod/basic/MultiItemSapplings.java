@@ -12,8 +12,8 @@ public class MultiItemSapplings extends ItemBlockWithMetadata {
     }
 	
 	public String getUnlocalizedName(ItemStack stack) {
-		if (stack.getItemDamage() >= 0 && stack.getItemDamage() < NathanMod.WoodTypes.length) {
-			return NathanMod.WoodTypes[stack.getItemDamage()] + "Sapplings";
+		if (stack.getItemDamage() >= 0 && stack.getItemDamage() < NathanMod.woodTypes.length) {
+			return NathanMod.woodTypes[stack.getItemDamage()] + "Sapplings";
 		} else {
 			return "Hickory";
 		}

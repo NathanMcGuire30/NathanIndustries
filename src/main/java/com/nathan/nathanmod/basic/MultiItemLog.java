@@ -13,14 +13,14 @@ public class MultiItemLog extends ItemBlockWithMetadata {
 	}
 	
 	public String getUnlocalizedName(ItemStack stack) {
-		if (stack.getItemDamage() < 0 || (stack.getItemDamage() >= NathanMod.WoodTypes.length && stack.getItemDamage() < 4)) {
+		if (stack.getItemDamage() < 0 || (stack.getItemDamage() >= NathanMod.woodTypes.length && stack.getItemDamage() < 4)) {
 			return "Hickory";
 		} else if (stack.getItemDamage() > 3) {
 			int i; 
 			i = stack.getItemDamage()%4;
-			return NathanMod.WoodTypes[i] + "Log";
+			return NathanMod.woodTypes[i] + "Log";
 		} else {
-			return NathanMod.WoodTypes[stack.getItemDamage()] + "Log";
+			return NathanMod.woodTypes[stack.getItemDamage()] + "Log";
 		}
 	}
 }

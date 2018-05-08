@@ -21,9 +21,9 @@ public class ItemNathanSlab extends ItemSlab {
 
 	public ItemNathanSlab(Block block)
 	{
-		super(block, (BlockSlab) NathanMod.NathanSlabs, (BlockSlab) NathanMod.NathanSlabsDouble, false);
-		singleSlab = (BlockSlab) NathanMod.NathanSlabs;
-		doubleSlab = (BlockSlab) NathanMod.NathanSlabsDouble;
+		super(block, (BlockSlab) NathanMod.nathanSlabs, (BlockSlab) NathanMod.nathanSlabsDouble, false);
+		singleSlab = (BlockSlab) NathanMod.nathanSlabs;
+		doubleSlab = (BlockSlab) NathanMod.nathanSlabsDouble;
 		isDouble = false;
 		setMaxDamage(0);
 		setHasSubtypes(true);

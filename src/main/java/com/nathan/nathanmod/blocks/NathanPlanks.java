@@ -22,12 +22,12 @@ public class NathanPlanks extends Block{
 		setBlockName(name);
 		setCreativeTab(CreativeTabs.tabBlock);
 		setHardness(2F);
-		if (NathanMod.WoodTypes.length < 16) {
-			woodTypes = new String[NathanMod.WoodTypes.length];
-			woodTypes = NathanMod.WoodTypes;
+		if (NathanMod.woodTypes.length < 16) {
+			woodTypes = new String[NathanMod.woodTypes.length];
+			woodTypes = NathanMod.woodTypes;
 		} else {
 			woodTypes = new String[16];
-			woodTypes = Arrays.copyOfRange(NathanMod.WoodTypes, 0, 15);
+			woodTypes = Arrays.copyOfRange(NathanMod.woodTypes, 0, 15);
 		}
 	}
 	

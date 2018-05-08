@@ -12,8 +12,8 @@ public class MultiItemPlanks extends ItemBlockWithMetadata {
     }
 	
 	public String getUnlocalizedName(ItemStack stack) {
-		if (stack.getItemDamage() >= 0 && stack.getItemDamage() < NathanMod.WoodTypes.length) {
-			return NathanMod.WoodTypes[stack.getItemDamage()] + "Planks";
+		if (stack.getItemDamage() >= 0 && stack.getItemDamage() < NathanMod.woodTypes.length) {
+			return NathanMod.woodTypes[stack.getItemDamage()] + "Planks";
 		} else {
 			return "Hickory";
 		}
