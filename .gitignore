@@ -7,6 +7,11 @@
 #
 /.metadata/
 /gradle/
+CREDITS-fml.txt
+LICENSE-fml.txt
+forge*changelog.txt
+MinecraftForge-*.txt
+
 
 # IDEs
 .classpath
