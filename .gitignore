@@ -4,6 +4,9 @@
 /bin/
 /out/
 
+#
+/.metadata/
+/gradle/
 
 # IDEs
 .classpath
