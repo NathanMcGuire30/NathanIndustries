@@ -124,6 +124,8 @@ public class BasicInit {
 			GameRegistry.addRecipe(new ItemStack(Items.stick, 4), "A", "A", 'A', new ItemStack(NathanMod.nathanPlanks, 1, i));
 			//Make crafting table from planks
 			GameRegistry.addRecipe(new ItemStack(Blocks.crafting_table, 1), "AA", "AA", 'A', new ItemStack(NathanMod.nathanPlanks, 1, i));
+			//Convert my wood planks into oak wood planks
+			GameRegistry.addRecipe(new ItemStack(Blocks.planks, 1), "A", 'A', new ItemStack(NathanMod.nathanPlanks, 1, i));
 		}
 		
 		//Tool recipies ----------------------------------------------------------------------------------------------------------------------------------------------------------------------

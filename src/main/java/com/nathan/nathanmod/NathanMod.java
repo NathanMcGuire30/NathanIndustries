@@ -2,7 +2,8 @@ package com.nathan.nathanmod;
 
 import com.nathan.nathanmod.basic.BasicInit;
 import com.nathan.nathanmod.basic.CreativeTabNathan;
-import com.nathan.nathanmod.world.TreeList;
+import com.nathan.nathanmod.world.WorldGenTrees;
+import com.nathan.nathanmod.world.tree.TreeGenTypes;
 import com.nathan.nathanmod.world.WorldGenBasicMineable;
 
 import cpw.mods.fml.common.Mod;
@@ -63,13 +64,16 @@ public class NathanMod
 	public static Item SpacesuitBoots;
 	
     //Creative tab
-    public static CreativeTabs tabNathan = new CreativeTabNathan("Nathan Industries", creativeTitanium);
+    public static CreativeTabs tabNathan = new CreativeTabNathan("Nathan Industries", NathanMod.titanium);
 	
-	//Matierals
+	//Materials
 	public static ArmorMaterial TITANIUM = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("TITANIUM", 16, new int[] {4, 9, 7, 4}, 30);
 	public static ArmorMaterial SPACESUIT = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("SPACESUIT", 5, new int[] {1, 1, 1, 1}, 0);
 	
 	public static ToolMaterial TITANIUMTOOL = net.minecraftforge.common.util.EnumHelper.addToolMaterial("Titanium", 3, 1561, 10.0F, 6, 25);
+	
+	//Tree types code
+	public static TreeGenTypes treeGenTypes;
 	
 	//pre-initialization
     @EventHandler
@@ -87,8 +91,11 @@ public class NathanMod
     	BasicInit.itemInit();				//Registers all items
     	BasicInit.recipeInit();				//registers all the recipes
     	
+    	//TreGen init
+    	treeGenTypes = new TreeGenTypes();
+    	
     	//World block generator
     	GameRegistry.registerWorldGenerator(new WorldGenBasicMineable(NathanMod.titaniumOre, 13), 0);
-    	GameRegistry.registerWorldGenerator(new TreeList(), 0);
+    	GameRegistry.registerWorldGenerator(new WorldGenTrees(), 0);
     }
 }

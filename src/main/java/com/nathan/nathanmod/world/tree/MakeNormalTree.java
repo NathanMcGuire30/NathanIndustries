@@ -1,4 +1,4 @@
-package com.nathan.nathanmod.world;
+package com.nathan.nathanmod.world.tree;
 
 import java.util.Random;
 

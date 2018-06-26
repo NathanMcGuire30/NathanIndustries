@@ -113,6 +113,7 @@ public class NathanLeaves extends BlockLeaves {
      * If ever fast graphics, return true
      * Called once per tick
      */
+    @SideOnly(Side.CLIENT)
     public boolean isOpaqueCube()
     {
     	graphicsLevel = Minecraft.getMinecraft().gameSettings.fancyGraphics;

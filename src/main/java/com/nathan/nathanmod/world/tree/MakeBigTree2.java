@@ -1,4 +1,4 @@
-package com.nathan.nathanmod.world;
+package com.nathan.nathanmod.world.tree;
 
 import java.util.Random;
 import net.minecraft.block.Block;
@@ -154,11 +154,10 @@ public class MakeBigTree2 extends WorldGenAbstractTree {
 					aint1[b2] = aint[b2] + j1;
 					Block block1 = this.worldObj.getBlock(aint1[0], aint1[1], aint1[2]);
 
-					if (!block1.isAir(worldObj, aint1[0], aint1[1], aint1[2])
-							&& !block1.isLeaves(worldObj, aint1[0], aint1[1], aint1[2])) {
+					if (!block1.isAir(worldObj, aint1[0], aint1[1], aint1[2]) && !block1.isLeaves(worldObj, aint1[0], aint1[1], aint1[2])) {
 						++j1;
 					} else {
-						this.setBlockAndNotifyAdequately(this.worldObj, aint1[0], aint1[1], aint1[2], leaves, meta);
+						this.setBlockAndNotifyAdequately(this.worldObj, aint1[0], aint1[1], aint1[2], leaves, this.meta);
 						++j1;
 					}
 				}
@@ -241,20 +240,20 @@ public class MakeBigTree2 extends WorldGenAbstractTree {
 				aint3[b1] = MathHelper.floor_double((double) (p_150530_1_[b1] + i) + 0.5D);
 				aint3[b2] = MathHelper.floor_double((double) p_150530_1_[b2] + (double) i * d0 + 0.5D);
 				aint3[b3] = MathHelper.floor_double((double) p_150530_1_[b3] + (double) i * d1 + 0.5D);
-				byte b5 = (byte) meta;
+				byte adjustedMeta = (byte) meta;
 				int k = Math.abs(aint3[0] - p_150530_1_[0]);
 				int l = Math.abs(aint3[2] - p_150530_1_[2]);
 				int i1 = Math.max(k, l);
 
 				if (i1 > 0) {
 					if (k == i1) {
-						b5 += 4;
+						adjustedMeta += 4;
 					} else if (l == i1) {
-						b5 += 8;
+						adjustedMeta += 8;
 					}
 				}
-
-				this.setBlockAndNotifyAdequately(this.worldObj, aint3[0], aint3[1], aint3[2], trunk, b5);
+				//Place trunk blocks
+				this.setBlockAndNotifyAdequately(this.worldObj, aint3[0], aint3[1], aint3[2], trunk, adjustedMeta);
 			}
 		}
 	}
@@ -444,5 +443,12 @@ public class MakeBigTree2 extends WorldGenAbstractTree {
 			this.worldObj = null; // Fix vanilla Mem leak, holds latest world
 			return true;
 		}
+	}
+	
+	public boolean generate(World world, Random random, int x, int y, int z, int trunkSize) {
+		this.trunkSize = trunkSize;
+		boolean i = this.generate(world, random, x, y, z);
+		this.trunkSize = 1;
+		return i;
 	}
 }

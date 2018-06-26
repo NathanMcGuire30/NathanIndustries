@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Random;
 
 import com.nathan.nathanmod.NathanMod;
-import com.nathan.nathanmod.world.MakeBigTree;
-import com.nathan.nathanmod.world.MakeBigTree2;
-import com.nathan.nathanmod.world.MakeNormalTree;
+import com.nathan.nathanmod.world.tree.MakeBigTree;
+import com.nathan.nathanmod.world.tree.MakeBigTree2;
+import com.nathan.nathanmod.world.tree.MakeNormalTree;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -129,14 +129,6 @@ public class BasicSappling extends BlockBush implements IGrowable {
         int j1 = 0;
         boolean flag = false;
 
-        MakeNormalTree treeGen;
-        MakeBigTree canopyTreeGen;
-        MakeBigTree2 bigTreeGen;
-	
-        treeGen = new MakeNormalTree(true, 5, NathanMod.nathanLogs, NathanMod.nathanLeaves, false, meta);
-        canopyTreeGen = new MakeBigTree(true, 4, NathanMod.nathanLogs, NathanMod.nathanLeaves, meta);
-        bigTreeGen = new MakeBigTree2(true, NathanMod.nathanLogs, NathanMod.nathanLeaves, meta);
-
         Block block = Blocks.air;
         if (flag)
         {
@@ -149,19 +141,7 @@ public class BasicSappling extends BlockBush implements IGrowable {
         {
             world.setBlock(x, y, z, block, 0, 4);
         }
-        
-        int i = (int) (Math.random()*4);
-        if(i==0) {
-        	if (canopyTreeGen.generate(world, random, x, y, z) == false) {
-        		treeGen.generate(world, random, x, y, z);
-        	}
-        } else if (i==1) {
-        	if (bigTreeGen.generate(world, random, x, y, z) == false) {
-        		treeGen.generate(world, random, x, y, z);
-        	}
-        } else {
-        	treeGen.generate(world, random, x, y, z);
-        }
+        NathanMod.treeGenTypes.genSapplingTree(meta, world, random, x, z);
     }
     
     public boolean func_149880_a(World world, int x, int y, int z, int metadata)
