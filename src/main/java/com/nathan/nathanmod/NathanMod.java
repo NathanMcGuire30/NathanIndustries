@@ -17,11 +17,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 
-@Mod(modid = NathanMod.MODID, version = NathanMod.VERSION)
+@Mod(modid = NathanMod.MODID, version = NathanMod.VERSION, name = NathanMod.NAME)
 public class NathanMod
 {
     public static final String MODID = "nathanmod";
-    public static final String VERSION = "4.2";
+    public static final String VERSION = "4.7";
     public static final String NAME = "Nathan Industries";
     
     //Wood types

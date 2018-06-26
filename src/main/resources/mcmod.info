@@ -3,7 +3,7 @@
   "modid": "nathanmod",
   "name": "Nathan Industries",
   "description": "A mod that adds some blocks and trees",
-  "version": "",
+  "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
