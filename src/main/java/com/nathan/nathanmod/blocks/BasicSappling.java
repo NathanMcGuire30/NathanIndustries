@@ -141,6 +141,8 @@ public class BasicSappling extends BlockBush implements IGrowable {
         {
             world.setBlock(x, y, z, block, 0, 4);
         }
+        
+        //Generate the tree!
         NathanMod.treeGenTypes.genSapplingTree(meta, world, random, x, z);
     }
     
