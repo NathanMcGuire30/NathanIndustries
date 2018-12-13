@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 
 //A class to organize my tree gen code
 public class TreeGenTypes {
-	public static MakeNormalTree[] generatorArray = new MakeNormalTree[NathanMod.woodTypes.length];
+	public static MakeNormalTree[] normalTreeGenerator = new MakeNormalTree[NathanMod.woodTypes.length];
 	public static MakeBigTree[] canopyGeneratorArray = new MakeBigTree[NathanMod.woodTypes.length];
 	public static MakeBigTree2[] bigTreeGeneratorArray = new MakeBigTree2[NathanMod.woodTypes.length];
 	public static int[] normalTreeHeights = new int[NathanMod.woodTypes.length];
@@ -21,13 +21,13 @@ public class TreeGenTypes {
 		int canopyTreeHeight;
 		
 		//define tree heights		
-		normalTreeHeights[0] = 5;
-		normalTreeHeights[1] = 4;
-		normalTreeHeights[2] = 6;
+		normalTreeHeights[0] = 5;		//Hickory
+		normalTreeHeights[1] = 4;		//Elm
+		normalTreeHeights[2] = 6;		//Beech
 		
-		canopyTreeHeights[0] = 4;
-		canopyTreeHeights[1] = 3;
-		canopyTreeHeights[2] = 5;
+		canopyTreeHeights[0] = 4;		//Hickory
+		canopyTreeHeights[1] = 3;		//Elm
+		canopyTreeHeights[2] = 5;		//Beech
 		
 		//Create tree gen objects
 		for (int i = 0; i < NathanMod.woodTypes.length; i++) {
@@ -39,43 +39,43 @@ public class TreeGenTypes {
 			else {canopyTreeHeight = defaultCanopyTreeHeight;}
 			
 			//make the objects
-			generatorArray[i] = new MakeNormalTree(true, treeHeight, NathanMod.nathanLogs, NathanMod.nathanLeaves, false, i);
+			normalTreeGenerator[i] = new MakeNormalTree(true, treeHeight, NathanMod.nathanLogs, NathanMod.nathanLeaves, false, i);
 			canopyGeneratorArray[i] = new MakeBigTree(true, treeHeight, NathanMod.nathanLogs, NathanMod.nathanLeaves, i);
 			bigTreeGeneratorArray[i] = new MakeBigTree2(true, NathanMod.nathanLogs, NathanMod.nathanLeaves, i);
 		}
 	}
 	
-	public static boolean genNormalTree(int meta, World world, Random random, int x, int z) {
-		if(meta >= 0 && meta < NathanMod.woodTypes.length) {
-			return generatorArray[meta].generate(world, random, x, world.getHeightValue(x, z), z);
+	public static boolean genNormalTree(int treeMetaType, World world, Random random, int x, int z) {
+		if(treeMetaType >= 0 && treeMetaType < NathanMod.woodTypes.length) {
+			return normalTreeGenerator[treeMetaType].generate(world, random, x, world.getHeightValue(x, z), z);
 		} else { return false;}
 	}
 	
-	public static boolean genBigTree(int meta, World world, Random random, int x, int z) {
-		if(meta >= 0 && meta < NathanMod.woodTypes.length) {
-			return bigTreeGeneratorArray[meta].generate(world, random, x, world.getHeightValue(x, z), z, 1);
+	public static boolean genBigTree(int treeMetaType, World world, Random random, int x, int z) {
+		if(treeMetaType >= 0 && treeMetaType < NathanMod.woodTypes.length) {
+			return bigTreeGeneratorArray[treeMetaType].generate(world, random, x, world.getHeightValue(x, z), z, 1);
 		} else { return false;}
 	}
 	
-	public static boolean genCanopyTree(int meta, World world, Random random, int x, int z) {
-		if(meta >= 0 && meta < NathanMod.woodTypes.length) {
-			return canopyGeneratorArray[meta].generate(world, random, x, world.getHeightValue(x, z), z);
+	public static boolean genCanopyTree(int treeMetaType, World world, Random random, int x, int z) {
+		if(treeMetaType >= 0 && treeMetaType < NathanMod.woodTypes.length) {
+			return canopyGeneratorArray[treeMetaType].generate(world, random, x, world.getHeightValue(x, z), z);
 		} else { return false;}
 	}
 	
 	//The specific logic used for generating trees from sapplings
-	public static void genSapplingTree(int meta, World world, Random random, int x, int z) {
+	public static void genSapplingTree(int treeMetaType, World world, Random random, int x, int z) {
 		int i = (int) (Math.random()*4);
         if(i==0) {
-        	if (genCanopyTree(meta, world, random, x, z) == false) {
-        		genNormalTree(meta, world, random, x, z);
+        	if (genCanopyTree(treeMetaType, world, random, x, z) == false) {
+        		genNormalTree(treeMetaType, world, random, x, z);
         	}
         } else if (i==1) {
-        	if (genBigTree(meta, world, random, x, z) == false) {
-        		genNormalTree(meta, world, random, x, z);
+        	if (genBigTree(treeMetaType, world, random, x, z) == false) {
+        		genNormalTree(treeMetaType, world, random, x, z);
         	}
         } else {
-        	genNormalTree(meta, world, random, x, z);
+        	genNormalTree(treeMetaType, world, random, x, z);
         }
 	}
 }

@@ -120,7 +120,7 @@ public class BasicSappling extends BlockBush implements IGrowable {
         }
     }
     
-    //make tree
+    //The function that actually grows the tree
     public void func_149878_d(World world, int x, int y, int z, Random random)
     {
         if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(world, random, x, y, z)) return;

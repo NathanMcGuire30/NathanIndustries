@@ -141,7 +141,7 @@ public class MakeNormalTree extends WorldGenAbstractTree {
 						}
 					}
 
-					// Makes vines grow on leaves? Not sure
+					// Makes vines grow on leaves and trunk
 					if (this.vinesGrow) {
 						for (k1 = yValue - 3 + l; k1 <= yValue + l; ++k1) {
 							i3 = k1 - (yValue + l);

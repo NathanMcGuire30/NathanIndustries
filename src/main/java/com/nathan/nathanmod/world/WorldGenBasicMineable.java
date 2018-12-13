@@ -12,8 +12,7 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 import cpw.mods.fml.common.IWorldGenerator;
 
 public class WorldGenBasicMineable implements IWorldGenerator {
-	private WorldGenerator generator; // Generates Titanium Ore (used in
-	// Overworld)
+	private WorldGenerator generator; // Generates any kind of Ore used in Overworld
 	private int spawnChance;
 
 	public WorldGenBasicMineable(Block BlockToGenerate, int chancesToSpawn) {
@@ -21,10 +20,10 @@ public class WorldGenBasicMineable implements IWorldGenerator {
 		spawnChance = chancesToSpawn;
 	}
 
-	private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z,
-			int chancesToSpawn, int minHeight, int maxHeight) {
-		if (minHeight < 0 || maxHeight > 256 || minHeight > maxHeight)
+	private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z, int chancesToSpawn, int minHeight, int maxHeight) {
+		if (minHeight < 0 || maxHeight > 256 || minHeight > maxHeight) {
 			throw new IllegalArgumentException("Illegal Height Arguments for WorldGenerator");
+		}
 
 		int heightDiff = maxHeight - minHeight + 1;
 		for (int i = 0; i < chancesToSpawn; i++) {
